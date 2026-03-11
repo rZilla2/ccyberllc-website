@@ -18,39 +18,43 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["var(--font-sans)", "sans-serif"],
+        heading: ["var(--font-heading)", "sans-serif"],
+      },
       colors: {
-        border: "var(--border)",
-        input: "var(--input)",
-        ring: "var(--ring)",
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        border: "#414868",
+        input: "#414868",
+        ring: "#7aa2f7",
+        background: "#1a1b26", /* Authentic Tokyo Night Background */
+        foreground: "#c0caf5", /* Authentic Tokyo Night Foreground */
         primary: {
-          DEFAULT: "var(--primary)",
-          foreground: "var(--primary-foreground)",
+          DEFAULT: "#7aa2f7", /* Tokyo Night Blue */
+          foreground: "#1a1b26",
         },
         secondary: {
-          DEFAULT: "var(--secondary)",
-          foreground: "var(--secondary-foreground)",
+          DEFAULT: "#bb9af7", /* Tokyo Night Purple */
+          foreground: "#1a1b26",
         },
         destructive: {
-          DEFAULT: "var(--destructive)",
-          foreground: "var(--destructive-foreground)",
+          DEFAULT: "#f7768e", /* Tokyo Night Red */
+          foreground: "#1a1b26",
         },
         muted: {
-          DEFAULT: "var(--muted)",
-          foreground: "var(--muted-foreground)",
+          DEFAULT: "#24283b", /* Tokyo Night Darker BG */
+          foreground: "#a9b1d6", /* Tokyo Night Muted Text */
         },
         accent: {
-          DEFAULT: "var(--accent)",
-          foreground: "var(--accent-foreground)",
+          DEFAULT: "#24283b",
+          foreground: "#c0caf5",
         },
         popover: {
-          DEFAULT: "var(--popover)",
-          foreground: "var(--popover-foreground)",
+          DEFAULT: "#16161e", /* Tokyo Night Darkest BG */
+          foreground: "#c0caf5",
         },
         card: {
-          DEFAULT: "var(--card)",
-          foreground: "var(--card-foreground)",
+          DEFAULT: "#16161e",
+          foreground: "#c0caf5",
         },
       },
       borderRadius: {
@@ -60,7 +64,7 @@ const config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 } satisfies Config;
 
 export default config;

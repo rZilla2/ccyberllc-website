@@ -1,26 +1,23 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Inter, Outfit } from "next/font/google";
 import { cn } from "@/lib/utils";
 import "./globals.css";
 
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 
-
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-heading",
 });
 
 export const metadata: Metadata = {
-  title: "Northstar Advisory | Cybersecurity Strategic Consulting",
+  title: "Convergent Cyber Solutions | Trusted Strategic & Cybersecurity Advisors",
   description: "Elite strategic advisory for growth-focused cybersecurity firms in the federal and commercial sectors.",
 };
 
@@ -30,8 +27,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={cn("font-sans", geistSans.variable)}>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}>
+    <html lang="en" className={cn("dark", inter.variable, outfit.variable)}>
+      <body className="font-sans antialiased min-h-screen flex flex-col bg-background text-foreground">
         <Navbar />
         <main className="flex-grow">
           {children}

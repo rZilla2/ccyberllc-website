@@ -11,82 +11,43 @@
 
 @layer base {
   :root {
-    --background: oklch(1 0 0);
-    --foreground: oklch(0.145 0 0);
-    --card: oklch(1 0 0);
-    --card-foreground: oklch(0.145 0 0);
-    --popover: oklch(1 0 0);
-    --popover-foreground: oklch(0.145 0 0);
-    --primary: oklch(0.205 0 0);
-    --primary-foreground: oklch(0.985 0 0);
-    --secondary: oklch(0.97 0 0);
-    --secondary-foreground: oklch(0.205 0 0);
-    --muted: oklch(0.97 0 0);
-    --muted-foreground: oklch(0.556 0 0);
-    --accent: oklch(0.97 0 0);
-    --accent-foreground: oklch(0.205 0 0);
-    --destructive: oklch(0.577 0.245 27.325);
-    --border: oklch(0.922 0 0);
-    --input: oklch(0.922 0 0);
-    --ring: oklch(0.708 0 0);
-    --chart-1: oklch(0.809 0.105 251.813);
-    --chart-2: oklch(0.623 0.214 259.815);
-    --chart-3: oklch(0.546 0.245 262.881);
-    --chart-4: oklch(0.488 0.243 264.376);
-    --chart-5: oklch(0.424 0.199 265.638);
-    --radius: 0.625rem;
-    --sidebar: oklch(0.985 0 0);
-    --sidebar-foreground: oklch(0.145 0 0);
-    --sidebar-primary: oklch(0.205 0 0);
-    --sidebar-primary-foreground: oklch(0.985 0 0);
-    --sidebar-accent: oklch(0.97 0 0);
-    --sidebar-accent-foreground: oklch(0.205 0 0);
-    --sidebar-border: oklch(0.922 0 0);
-    --sidebar-ring: oklch(0.708 0 0);
+    /* Tokyo Night Theme (Dark Only for now) */
+    --background: 235 19% 13%; /* #1a1b26 */
+    --foreground: 229 67% 85%; /* #c0caf5 */
+    --card: 240 15% 10%; /* #16161e */
+    --card-foreground: 229 67% 85%; /* #c0caf5 */
+    --popover: 240 15% 10%; /* #16161e */
+    --popover-foreground: 229 67% 85%; /* #c0caf5 */
+    --primary: 221 89% 72%; /* #7aa2f7 */
+    --primary-foreground: 235 19% 13%; /* #1a1b26 */
+    --secondary: 261 85% 79%; /* #bb9af7 */
+    --secondary-foreground: 235 19% 13%; /* #1a1b26 */
+    --muted: 235 21% 18%; /* #24283b */
+    --muted-foreground: 229 27% 55%; /* #a9b1d6 */
+    --accent: 235 21% 18%; /* #24283b */
+    --accent-foreground: 229 67% 85%; /* #c0caf5 */
+    --destructive: 349 89% 68%; /* #f7768e */
+    --border: 235 21% 25%; /* Slightly lighter than --muted */
+    --input: 235 21% 18%; /* #24283b */
+    --ring: 221 89% 72%; /* #7aa2f7 */
+    
+    --radius: 0.5rem;
   }
-  .dark {
-    --background: oklch(0.145 0 0);
-    --foreground: oklch(0.985 0 0);
-    --card: oklch(0.205 0 0);
-    --card-foreground: oklch(0.985 0 0);
-    --popover: oklch(0.205 0 0);
-    --popover-foreground: oklch(0.985 0 0);
-    --primary: oklch(0.922 0 0);
-    --primary-foreground: oklch(0.205 0 0);
-    --secondary: oklch(0.269 0 0);
-    --secondary-foreground: oklch(0.985 0 0);
-    --muted: oklch(0.269 0 0);
-    --muted-foreground: oklch(0.708 0 0);
-    --accent: oklch(0.269 0 0);
-    --accent-foreground: oklch(0.985 0 0);
-    --destructive: oklch(0.704 0.191 22.216);
-    --border: oklch(1 0 0 / 10%);
-    --input: oklch(1 0 0 / 15%);
-    --ring: oklch(0.556 0 0);
-    --chart-1: oklch(0.809 0.105 251.813);
-    --chart-2: oklch(0.623 0.214 259.815);
-    --chart-3: oklch(0.546 0.245 262.881);
-    --chart-4: oklch(0.488 0.243 264.376);
-    --chart-5: oklch(0.424 0.199 265.638);
-    --sidebar: oklch(0.205 0 0);
-    --sidebar-foreground: oklch(0.985 0 0);
-    --sidebar-primary: oklch(0.488 0.243 264.376);
-    --sidebar-primary-foreground: oklch(0.985 0 0);
-    --sidebar-accent: oklch(0.269 0 0);
-    --sidebar-accent-foreground: oklch(0.985 0 0);
-    --sidebar-border: oklch(1 0 0 / 10%);
-    --sidebar-ring: oklch(0.556 0 0);
-  }
+  
   .theme {
     --font-sans: var(--font-sans);
   }
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border outline-ring;
   }
   body {
     @apply bg-background text-foreground;
   }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+  }
   html {
-    @apply font-sans;
+    color-scheme: dark;
   }
 }

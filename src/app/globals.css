@@ -11,25 +11,25 @@
 
 @layer base {
   :root {
-    /* Tokyo Night Theme (Dark Only for now) */
+    /* Tokyo Night Theme (Corporate & Subtle) */
     --background: 235 19% 13%; /* #1a1b26 */
     --foreground: 229 67% 85%; /* #c0caf5 */
     --card: 240 15% 10%; /* #16161e */
     --card-foreground: 229 67% 85%; /* #c0caf5 */
     --popover: 240 15% 10%; /* #16161e */
     --popover-foreground: 229 67% 85%; /* #c0caf5 */
-    --primary: 221 89% 72%; /* #7aa2f7 */
+    --primary: 221 50% 65%; /* Desaturated Blue */
     --primary-foreground: 235 19% 13%; /* #1a1b26 */
-    --secondary: 261 85% 79%; /* #bb9af7 */
+    --secondary: 261 40% 70%; /* Desaturated Purple */
     --secondary-foreground: 235 19% 13%; /* #1a1b26 */
     --muted: 235 21% 18%; /* #24283b */
     --muted-foreground: 229 27% 55%; /* #a9b1d6 */
     --accent: 235 21% 18%; /* #24283b */
     --accent-foreground: 229 67% 85%; /* #c0caf5 */
-    --destructive: 349 89% 68%; /* #f7768e */
+    --destructive: 349 60% 60%; /* Desaturated Red */
     --border: 235 21% 25%; /* Slightly lighter than --muted */
     --input: 235 21% 18%; /* #24283b */
-    --ring: 221 89% 72%; /* #7aa2f7 */
+    --ring: 221 50% 65%; /* Desaturated Blue */
     
     --radius: 0.5rem;
   }

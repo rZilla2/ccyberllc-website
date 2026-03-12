@@ -72,12 +72,14 @@ export default function Home() {
       <div className="relative z-20 flex-grow container mx-auto px-4 md:px-8 flex items-center justify-center">
         <div key={currentSlide} className="max-w-4xl mx-auto text-center animate-in fade-in slide-in-from-bottom-8 duration-1000">
           
-          <div className="flex justify-center">
+          <div className="flex justify-center mb-2 drop-shadow-lg">
             {slides[currentSlide].icon}
           </div>
 
-          <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl mb-6 text-foreground whitespace-pre-line">
+          <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl mb-6 text-foreground whitespace-pre-line drop-shadow-[0_0_15px_rgba(192,202,245,0.15)]">
+            <span className="text-primary/40 font-mono text-3xl md:text-5xl mr-3 font-light">{"<"}</span>
             {slides[currentSlide].title}
+            <span className="text-primary/40 font-mono text-3xl md:text-5xl ml-3 font-light">{"/>"}</span>
           </h1>
           
           <p className="mx-auto max-w-2xl text-muted-foreground md:text-xl lg:text-2xl mb-12 leading-relaxed">
@@ -86,23 +88,23 @@ export default function Home() {
 
           {slides[currentSlide].buttons && (
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-              <Button size="lg" className="h-14 px-8 text-lg shadow-lg shadow-primary/20" asChild>
+              <Button size="lg" className="h-14 px-8 text-lg bg-primary text-primary-foreground shadow-[0_0_20px_rgba(122,162,247,0.3)] hover:shadow-[0_0_35px_rgba(122,162,247,0.6)] transition-all duration-300" asChild>
                 <Link href="/contact">
                   Book a Meeting <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" className="h-14 px-8 text-lg border-primary/20 hover:bg-primary/10" asChild>
+              <Button size="lg" variant="outline" className="h-14 px-8 text-lg border-primary/30 text-foreground hover:bg-primary/20 hover:border-primary/50 shadow-[0_0_15px_rgba(122,162,247,0.05)] hover:shadow-[0_0_20px_rgba(122,162,247,0.2)] transition-all duration-300" asChild>
                 <Link href="/services">Explore Services</Link>
               </Button>
             </div>
           )}
 
           {slides[currentSlide].features && (
-            <div className="flex flex-wrap justify-center gap-4 md:gap-8 mt-12">
+            <div className="flex flex-wrap justify-center gap-4 md:gap-6 mt-12">
               {slides[currentSlide].features.map((feature, i) => (
-                <div key={i} className="flex items-center text-foreground font-medium text-lg bg-card/50 px-6 py-3 rounded-full border border-border/50 backdrop-blur-sm">
-                  <span className="w-2 h-2 rounded-full bg-primary mr-3"></span>
-                  {feature}
+                <div key={i} className="group flex items-center text-foreground font-medium text-lg bg-card/70 px-6 py-3 rounded-md backdrop-blur-sm hover:shadow-[0_0_25px_rgba(122,162,247,0.1)] transition-all duration-300 cursor-default">
+                  <span className="text-primary/70 font-mono mr-3 group-hover:text-primary transition-colors">{"//"}</span>
+                  <span className="tracking-wide">{feature}</span>
                 </div>
               ))}
             </div>

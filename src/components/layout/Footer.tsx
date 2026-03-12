@@ -7,7 +7,7 @@ export function Footer() {
       <div className="container mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-4 px-4 md:px-8">
         <div className="flex flex-col gap-4">
           <Link href="/" className="flex items-center gap-2">
-            <Image src="/convergent_logo_light.png" alt="Convergent Cyber Solutions" width={220} height={60} className="object-contain" />
+            <Image src="/ccyber-logo-final.png" alt="CCYBER Logo" width={220} height={60} className="object-contain" />
           </Link>
           <p className="text-sm text-muted-foreground max-w-xs">
             Strategic cyber advisory for growth-focused security firms. Federal and commercial sector specialists.

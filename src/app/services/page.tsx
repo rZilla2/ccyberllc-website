@@ -1,4 +1,4 @@
-import { ShieldCheck, Target, TrendingUp, Lock, Users, FileText } from "lucide-react";
+import { ShieldCheck, Target, TrendingUp, Lock, Users } from "lucide-react";
 
 export default function ServicesPage() {
   const services = [

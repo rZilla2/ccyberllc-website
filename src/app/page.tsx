@@ -113,29 +113,28 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Slider Controls */}
-      <div className="relative z-30 container mx-auto px-4 md:px-8 pb-12 flex items-center justify-between">
-        <div className="flex gap-2">
-          {slides.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentSlide(index)}
-              className={`h-1.5 rounded-full transition-all duration-300 ${
-                currentSlide === index ? "w-12 bg-primary" : "w-4 bg-muted hover:bg-muted-foreground"
-              }`}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))}
-        </div>
-        
-        <div className="flex gap-4">
-          <Button variant="outline" size="icon" className="rounded-full bg-background/50 border-border/50 hover:bg-card hover:text-primary backdrop-blur-sm" onClick={prevSlide}>
-            <ChevronLeft className="h-6 w-6" />
-          </Button>
-          <Button variant="outline" size="icon" className="rounded-full bg-background/50 border-border/50 hover:bg-card hover:text-primary backdrop-blur-sm" onClick={nextSlide}>
-            <ChevronRight className="h-6 w-6" />
-          </Button>
-        </div>
+      {/* Left Arrow */}
+      <Button variant="outline" size="icon" className="absolute left-8 top-1/2 -translate-y-1/2 z-30 h-14 w-14 rounded-full bg-background/50 border-border/50 hover:bg-card hover:text-primary backdrop-blur-sm" onClick={prevSlide}>
+        <ChevronLeft className="h-9 w-9" />
+      </Button>
+
+      {/* Right Arrow */}
+      <Button variant="outline" size="icon" className="absolute right-8 top-1/2 -translate-y-1/2 z-30 h-14 w-14 rounded-full bg-background/50 border-border/50 hover:bg-card hover:text-primary backdrop-blur-sm" onClick={nextSlide}>
+        <ChevronRight className="h-9 w-9" />
+      </Button>
+
+      {/* Dot Indicators */}
+      <div className="relative z-30 pb-10 flex justify-center gap-2">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentSlide(index)}
+            className={`h-1.5 rounded-full transition-all duration-300 ${
+              currentSlide === index ? "w-12 bg-primary" : "w-4 bg-muted hover:bg-muted-foreground"
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
       </div>
     </div>
   );

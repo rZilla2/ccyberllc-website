@@ -60,13 +60,13 @@ export default function Home() {
     <div className="relative w-full min-h-[calc(100vh-4rem)] bg-background overflow-hidden flex flex-col">
       {/* Dynamic Background */}
       <div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-30 mix-blend-screen transition-opacity duration-1000"
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-65 mix-blend-screen transition-opacity duration-1000"
         style={{ backgroundImage: `url('${slides[currentSlide].bgImage}')` }}
       />
       
       {/* Tokyo Night Moody Gradients */}
       <div className={`absolute inset-0 z-10 bg-gradient-to-tr ${slides[currentSlide].accentColor} to-background/95 transition-colors duration-1000`}></div>
-      <div className="absolute inset-0 z-10 bg-gradient-to-b from-background/80 via-background/40 to-background/90"></div>
+      <div className="absolute inset-0 z-10 bg-gradient-to-b from-background/50 via-background/10 to-background/60"></div>
 
       {/* Main Slide Content */}
       <div className="relative z-20 flex-grow container mx-auto px-4 md:px-8 flex items-center justify-center">

@@ -11,25 +11,25 @@
 
 @layer base {
   :root {
-    /* Tokyo Night Theme (Corporate & Subtle) */
-    --background: 235 19% 13%; /* #1a1b26 */
-    --foreground: 229 67% 85%; /* #c0caf5 */
-    --card: 240 15% 10%; /* #16161e */
-    --card-foreground: 229 67% 85%; /* #c0caf5 */
-    --popover: 240 15% 10%; /* #16161e */
-    --popover-foreground: 229 67% 85%; /* #c0caf5 */
-    --primary: 221 50% 65%; /* Desaturated Blue */
-    --primary-foreground: 235 19% 13%; /* #1a1b26 */
-    --secondary: 261 40% 70%; /* Desaturated Purple */
-    --secondary-foreground: 235 19% 13%; /* #1a1b26 */
-    --muted: 235 21% 18%; /* #24283b */
-    --muted-foreground: 229 27% 55%; /* #a9b1d6 */
-    --accent: 235 21% 18%; /* #24283b */
-    --accent-foreground: 229 67% 85%; /* #c0caf5 */
-    --destructive: 349 60% 60%; /* Desaturated Red */
-    --border: 235 21% 25%; /* Slightly lighter than --muted */
-    --input: 235 21% 18%; /* #24283b */
-    --ring: 221 50% 65%; /* Desaturated Blue */
+    /* Convergent Bull Theme — Dusty Rose + Steel Gray */
+    --background: 0 0% 0%; /* #000000 pure black */
+    --foreground: 210 10% 80%; /* #c0c8ce steel gray text */
+    --card: 210 12% 10%; /* #161a1e */
+    --card-foreground: 210 10% 80%;
+    --popover: 210 12% 10%;
+    --popover-foreground: 210 10% 80%;
+    --primary: 0 25% 56%; /* #b07070 dusty rose */
+    --primary-foreground: 210 15% 8%;
+    --secondary: 210 10% 72%; /* #a8b0b8 silver gray */
+    --secondary-foreground: 210 15% 8%;
+    --muted: 210 12% 14%; /* #1e2226 */
+    --muted-foreground: 210 8% 55%; /* #858d94 */
+    --accent: 210 12% 14%;
+    --accent-foreground: 210 10% 80%;
+    --destructive: 0 50% 50%; /* red */
+    --border: 210 10% 20%;
+    --input: 210 12% 14%;
+    --ring: 0 25% 56%; /* dusty rose ring */
     
     --radius: 0.5rem;
   }

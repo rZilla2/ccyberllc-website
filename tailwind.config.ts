@@ -23,38 +23,38 @@ const config = {
         heading: ["var(--font-heading)", "sans-serif"],
       },
       colors: {
-        border: "#414868",
-        input: "#414868",
-        ring: "#7aa2f7",
-        background: "#1a1b26", /* Authentic Tokyo Night Background */
-        foreground: "#c0caf5", /* Authentic Tokyo Night Foreground */
+        border: "#2a2e32",
+        input: "#1e2226",
+        ring: "#b07070", /* dusty rose */
+        background: "#000000", /* pure black */
+        foreground: "#c0c8ce", /* steel gray */
         primary: {
-          DEFAULT: "#7aa2f7", /* Tokyo Night Blue */
-          foreground: "#1a1b26",
+          DEFAULT: "#b07070", /* dusty rose */
+          foreground: "#101418",
         },
         secondary: {
-          DEFAULT: "#bb9af7", /* Tokyo Night Purple */
-          foreground: "#1a1b26",
+          DEFAULT: "#a8b0b8", /* silver gray */
+          foreground: "#101418",
         },
         destructive: {
-          DEFAULT: "#f7768e", /* Tokyo Night Red */
-          foreground: "#1a1b26",
+          DEFAULT: "#c44040",
+          foreground: "#101418",
         },
         muted: {
-          DEFAULT: "#24283b", /* Tokyo Night Darker BG */
-          foreground: "#a9b1d6", /* Tokyo Night Muted Text */
+          DEFAULT: "#1e2226",
+          foreground: "#858d94",
         },
         accent: {
-          DEFAULT: "#24283b",
-          foreground: "#c0caf5",
+          DEFAULT: "#1e2226",
+          foreground: "#c0c8ce",
         },
         popover: {
-          DEFAULT: "#16161e", /* Tokyo Night Darkest BG */
-          foreground: "#c0caf5",
+          DEFAULT: "#161a1e",
+          foreground: "#c0c8ce",
         },
         card: {
-          DEFAULT: "#16161e",
-          foreground: "#c0caf5",
+          DEFAULT: "#161a1e",
+          foreground: "#c0c8ce",
         },
       },
       borderRadius: {

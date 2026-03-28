@@ -6,24 +6,13 @@ import Image from "next/image";
 
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-20 items-center justify-between mx-auto px-4 md:px-8">
-        <Link href="/" className="flex items-center gap-2 transition-opacity hover:opacity-80 py-2">
-          <Image src="/ccyber-logo-final.png" alt="CCYBER Logo" width={320} height={80} className="object-contain h-14 w-auto" priority />
+    <header className="fixed top-0 z-50 w-full bg-transparent">
+      <div className="flex h-28 items-center justify-between px-6 md:px-12">
+        <Link href="/" className="flex items-center transition-opacity hover:opacity-80 mt-2 ml-2">
+          <Image src="/convergent-bull-logo.png" alt="Convergent Cyber" width={600} height={430} className="object-contain w-[200px] md:w-[240px]" priority />
         </Link>
-        <nav className="hidden md:flex gap-6">
-          <Link href="/services" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
-            Services
-          </Link>
-          <Link href="/about" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
-            About
-          </Link>
-          <Link href="/contact" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
-            Contact
-          </Link>
-        </nav>
         <div className="flex items-center gap-4">
-          <Button asChild>
+          <Button asChild className="bg-secondary text-secondary-foreground hover:bg-secondary/80">
             <Link href="/contact">Book a Meeting</Link>
           </Button>
         </div>

@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export function Footer() {
   return (
-    <footer className="border-t bg-muted/40 p-8 md:p-12">
+    <footer className="border-t border-muted/30 bg-background p-8 md:p-12">
       <div className="container mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-4 px-4 md:px-8">
         <div className="flex flex-col gap-4">
           <Link href="/" className="flex items-center gap-2">
-            <Image src="/ccyber-logo-final.png" alt="CCYBER Logo" width={160} height={44} className="object-contain h-10 w-auto" />
+            <Image src="/convergent-bull-logo.png" alt="Convergent Cyber" width={400} height={280} className="object-contain w-[160px]" />
           </Link>
           <p className="text-sm text-muted-foreground max-w-xs">
             Strategic cyber advisory for growth-focused security firms. Federal and commercial sector specialists.

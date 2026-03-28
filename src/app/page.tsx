@@ -12,7 +12,7 @@ const slides = [
     description: "Convergent Cyber Solutions provides elite vCISO, federal compliance, and growth consulting to security firms navigating complex markets.",
     icon: <ShieldCheck className="h-16 w-16 text-primary mb-6" />,
     buttons: true,
-    bgImage: "/hero-bg.png",
+    bgImage: "/hero-bg-cyber.png",
     accentColor: "from-primary/20",
   },
   {
@@ -21,7 +21,7 @@ const slides = [
     description: "Executive-level security leadership on demand. Drive your security program, manage risk, and align cyber initiatives with business goals without the full-time overhead.",
     icon: <ShieldCheck className="h-16 w-16 text-primary mb-6" />,
     features: ["Strategic Planning", "Board Reporting", "Incident Leadership"],
-    bgImage: "/hero-bg.png",
+    bgImage: "/hero-bg-cyber.png",
     accentColor: "from-primary/20",
   },
   {
@@ -30,7 +30,7 @@ const slides = [
     description: "Navigate complex regulatory landscapes with confidence. We specialize in gap assessments and implementation strategies for CMMC, NIST 800-171, and FedRAMP.",
     icon: <Target className="h-16 w-16 text-secondary mb-6" />,
     features: ["Gap Assessments", "SSP & POA&M Creation", "Audit Preparation"],
-    bgImage: "/hero-bg.png",
+    bgImage: "/hero-bg-cyber.png",
     accentColor: "from-secondary/20",
   },
   {
@@ -39,7 +39,7 @@ const slides = [
     description: "Accelerate your cybersecurity firm\'s market penetration. We architect robust partner programs and optimize product-led growth pipelines tailored for technical sales.",
     icon: <TrendingUp className="h-16 w-16 text-accent-foreground mb-6" />,
     features: ["Channel Architecture", "GTM Optimization", "Competitive Intelligence"],
-    bgImage: "/hero-bg.png",
+    bgImage: "/hero-bg-cyber.png",
     accentColor: "from-accent-foreground/20",
   }
 ];
@@ -60,13 +60,29 @@ export default function Home() {
     <div className="relative w-full min-h-[calc(100vh-4rem)] bg-background overflow-hidden flex flex-col">
       {/* Dynamic Background */}
       <div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-65 mix-blend-screen transition-opacity duration-1000"
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-75 mix-blend-screen transition-opacity duration-1000"
         style={{ backgroundImage: `url('${slides[currentSlide].bgImage}')` }}
       />
       
-      {/* Tokyo Night Moody Gradients */}
+      {/* Bull watermark — left third, above dark overlay */}
+      <div className="absolute inset-0 z-[15] pointer-events-none overflow-hidden">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/bull-watermark.png"
+          alt=""
+          className="absolute opacity-[0.12]"
+          style={{
+            width: "87.5vw",
+            top: "calc(50% - 75px)",
+            right: "40%",
+            transform: "translateY(-50%)",
+          }}
+        />
+      </div>
+      {/* Dark overlay — pure black on left, transparent on right */}
       <div className={`absolute inset-0 z-10 bg-gradient-to-tr ${slides[currentSlide].accentColor} to-background/95 transition-colors duration-1000`}></div>
-      <div className="absolute inset-0 z-10 bg-gradient-to-b from-background/50 via-background/10 to-background/60"></div>
+      <div className="absolute inset-0 z-10 bg-gradient-to-r from-black from-25% via-black/80 via-45% to-transparent"></div>
+      <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/80 via-transparent to-black/80"></div>
 
       {/* Main Slide Content */}
       <div className="relative z-20 flex-grow container mx-auto px-4 md:px-8 flex items-center justify-center">
@@ -88,12 +104,12 @@ export default function Home() {
 
           {slides[currentSlide].buttons && (
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-              <Button size="lg" className="h-14 px-8 text-lg bg-primary text-primary-foreground shadow-[0_0_20px_rgba(122,162,247,0.3)] hover:shadow-[0_0_35px_rgba(122,162,247,0.6)] transition-all duration-300" asChild>
+              <Button size="lg" className="h-14 px-8 text-lg bg-primary text-primary-foreground shadow-[0_0_20px_rgba(176,112,112,0.3)] hover:shadow-[0_0_35px_rgba(176,112,112,0.6)] transition-all duration-300" asChild>
                 <Link href="/contact">
                   Book a Meeting <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" className="h-14 px-8 text-lg border-primary/30 text-foreground hover:bg-primary/20 hover:border-primary/50 shadow-[0_0_15px_rgba(122,162,247,0.05)] hover:shadow-[0_0_20px_rgba(122,162,247,0.2)] transition-all duration-300" asChild>
+              <Button size="lg" variant="outline" className="h-14 px-8 text-lg border-primary/30 text-foreground hover:bg-primary/20 hover:border-primary/50 shadow-[0_0_15px_rgba(176,112,112,0.05)] hover:shadow-[0_0_20px_rgba(176,112,112,0.2)] transition-all duration-300" asChild>
                 <Link href="/services">Explore Services</Link>
               </Button>
             </div>
@@ -102,7 +118,7 @@ export default function Home() {
           {slides[currentSlide].features && (
             <div className="flex flex-wrap justify-center gap-4 md:gap-6 mt-12">
               {slides[currentSlide].features.map((feature, i) => (
-                <div key={i} className="group flex items-center text-foreground font-medium text-lg bg-card/70 px-6 py-3 rounded-md backdrop-blur-sm hover:shadow-[0_0_25px_rgba(122,162,247,0.1)] transition-all duration-300 cursor-default">
+                <div key={i} className="group flex items-center text-foreground font-medium text-lg bg-card/70 px-6 py-3 rounded-md backdrop-blur-sm hover:shadow-[0_0_25px_rgba(176,112,112,0.1)] transition-all duration-300 cursor-default">
                   <span className="text-primary/70 font-mono mr-3 group-hover:text-primary transition-colors">{"//"}</span>
                   <span className="tracking-wide">{feature}</span>
                 </div>

@@ -104,7 +104,7 @@ export default function Home() {
 
           {slides[currentSlide].buttons && (
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-              <Button size="lg" className="h-14 px-8 text-lg bg-[#6a7278] text-white hover:bg-[#7a8288] transition-all duration-300" asChild>
+              <Button size="lg" className="h-14 px-8 text-lg bg-[#b07070] text-white hover:bg-[#c08080] transition-all duration-300" asChild>
                 <Link href="/contact">
                   Book a Meeting <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>

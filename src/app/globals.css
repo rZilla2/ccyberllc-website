@@ -47,11 +47,16 @@
     font-family: var(--font-heading);
     letter-spacing: -0.02em;
   }
-  html, body {
+  html {
     color-scheme: dark;
     overflow-x: hidden;
-    background-color: #000000 !important;
-    max-width: 100vw;
+    background: #000000 !important;
+  }
+  body {
+    overflow-x: hidden;
+    background: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
   /* Hide scrollbar or make it black */
   ::-webkit-scrollbar {

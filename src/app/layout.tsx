@@ -19,6 +19,7 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "Convergent Cyber Solutions | Trusted Strategic & Cybersecurity Advisors",
   description: "Elite strategic advisory for growth-focused cybersecurity firms in the federal and commercial sectors.",
+  themeColor: "#000000",
 };
 
 export default function RootLayout({

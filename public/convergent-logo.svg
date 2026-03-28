@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 80" fill="none">
+  <!-- Faceted Shield -->
+  <g transform="translate(8, 4)">
+    <!-- Left upper facet -->
+    <path d="M30 8 L8 18 L8 44 L30 38 Z" fill="#7a8288" opacity="0.7"/>
+    <!-- Left lower facet -->
+    <path d="M8 44 L30 68 L30 38 Z" fill="#5a6268" opacity="0.8"/>
+    <!-- Right upper facet -->
+    <path d="M30 8 L52 18 L52 44 L30 38 Z" fill="#9aa0a6" opacity="0.6"/>
+    <!-- Right lower facet -->
+    <path d="M52 44 L30 68 L30 38 Z" fill="#6a7278" opacity="0.75"/>
+    <!-- Center line -->
+    <line x1="30" y1="8" x2="30" y2="68" stroke="#8a9298" stroke-width="0.8" opacity="0.5"/>
+    <!-- Horizontal crease -->
+    <line x1="8" y1="44" x2="52" y2="44" stroke="#8a9298" stroke-width="0.6" opacity="0.4"/>
+    <!-- Outline -->
+    <path d="M30 8 L52 18 L52 44 L30 68 L8 44 L8 18 Z" stroke="#8a9298" stroke-width="1" fill="none" opacity="0.4"/>
+  </g>
+  <!-- CONVERGENT text -->
+  <text x="72" y="38" font-family="Manrope, sans-serif" font-weight="800" font-size="28" letter-spacing="3" fill="#8a9298">CONVERGENT</text>
+  <!-- CYBER SOLUTIONS text -->
+  <text x="72" y="58" font-family="Manrope, sans-serif" font-weight="500" font-size="14" letter-spacing="2.5" fill="#6a7278">CYBER SOLUTIONS</text>
+</svg>

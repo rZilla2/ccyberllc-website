@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Convergent Cyber Solutions | Tokyo Night</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'tokyo-bg': '#1a1b26',
+            'tokyo-night': '#16161e',
+            'tokyo-purple': '#9d7cd8',
+            'tokyo-cyan': '#7dcfff',
+            'tokyo-blue': '#7aa2f7',
+            'tokyo-text': '#c0caf5',
+            'tokyo-muted': '#565f89'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            arch: ['Lexend', 'Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;family=Lexend:wght@700&amp;display=swap" rel="stylesheet"/>
+<style data-purpose="custom-styles">
+    body {
+      background-color: #1a1b26;
+      color: #c0caf5;
+      overflow-x: hidden;
+    }
+    
+    .cosmic-grid {
+      position: absolute;
+      inset: 0;
+      background: 
+        radial-gradient(circle at 50% 50%, rgba(157, 124, 216, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(125, 207, 255, 0.1) 0%, transparent 40%),
+        linear-gradient(to bottom, transparent, #1a1b26);
+      z-index: 0;
+    }
+
+    .perspective-grid {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 60%;
+      background-image: 
+        linear-gradient(rgba(157, 124, 216, 0.2) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(157, 124, 216, 0.2) 1px, transparent 1px);
+      background-size: 100px 100px;
+      transform: perspective(500px) rotateX(60deg);
+      transform-origin: bottom;
+      mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+      z-index: 1;
+    }
+
+    .neon-button-primary {
+      background: #9d7cd8;
+      box-shadow: 0 0 15px rgba(157, 124, 216, 0.4), inset 0 0 5px rgba(255, 255, 255, 0.2);
+      color: #16161e;
+      font-weight: 700;
+      transition: all 0.3s ease;
+    }
+    
+    .neon-button-primary:hover {
+      box-shadow: 0 0 25px rgba(157, 124, 216, 0.6);
+      transform: translateY(-2px);
+    }
+
+    .neon-button-outline {
+      background: transparent;
+      border: 1px solid #7dcfff;
+      color: #7dcfff;
+      box-shadow: 0 0 10px rgba(125, 207, 255, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .neon-button-outline:hover {
+      background: rgba(125, 207, 255, 0.1);
+      box-shadow: 0 0 20px rgba(125, 207, 255, 0.4);
+      color: #fff;
+    }
+
+    .text-tokyo-gradient {
+      background: linear-gradient(to bottom right, #fff, #9d7cd8, #7dcfff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 0 10px rgba(157, 124, 216, 0.3));
+    }
+
+    .glass-nav {
+      background: rgba(22, 22, 30, 0.8);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(157, 124, 216, 0.1);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col font-sans">
+<!-- BEGIN: Header -->
+<header class="w-full fixed top-0 left-0 z-50 py-4 px-8 md:px-16 lg:px-24 flex justify-between items-center glass-nav" data-purpose="main-header">
+<!-- Logo Section -->
+<div class="flex items-center gap-3 cursor-pointer" data-purpose="logo-container">
+<div class="w-10 h-10 overflow-hidden rounded">
+<img alt="Convergent Logo" class="w-full h-full object-contain filter brightness-125" src="https://lh3.googleusercontent.com/aida/ADBb0uhPXJGd7TBj6T-aKB9IEIkfpsKBr-FsEBDBmZ3y7QqA7-wtRaOE6KgvHAJH1btzM3yQW_581AhLgp7GaU_98IFHU5dNMSNTt7Ifi7k0NBDDksIXKy6CPaprZeiUfKVpde85UtE3K7nmKkGPcQwRyrywTAguwdsz0TfZEBdhvqjTrAem8HSpNvL-H91sVyKROuGc9Yq3WWwlZDEGOVpNG8sGk09iG3vR1zTrdtv1_oQgamNS6v_vUaW8_OJ8"/>
+</div>
+<div class="flex flex-col">
+<h1 class="text-xl font-bold tracking-[0.2em] leading-tight font-arch text-white">CONVERGENT</h1>
+<p class="text-[0.6rem] text-tokyo-cyan tracking-[0.4em] font-medium">CYBER SOLUTIONS</p>
+</div>
+</div>
+<!-- Navigation Links -->
+<nav class="hidden md:flex items-center gap-8" data-purpose="desktop-nav">
+<a class="text-sm font-medium text-tokyo-text hover:text-tokyo-purple transition-colors" href="#">Solutions</a>
+<a class="text-sm font-medium text-tokyo-text hover:text-tokyo-purple transition-colors" href="#">Services</a>
+<a class="text-sm font-medium text-tokyo-text hover:text-tokyo-purple transition-colors" href="#">About Us</a>
+<a class="text-sm font-medium text-tokyo-text hover:text-tokyo-purple transition-colors" href="#">Resources</a>
+</nav>
+<!-- Contact Button -->
+<div class="hidden md:block" data-purpose="header-cta">
+<a class="neon-button-outline text-xs px-6 py-2 rounded-full inline-block uppercase tracking-widest font-bold" href="#">
+      Contact
+    </a>
+</div>
+<!-- Mobile Menu Button -->
+<button class="md:hidden text-tokyo-text hover:text-tokyo-purple focus:outline-none" data-purpose="mobile-menu-toggle">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</header>
+<!-- END: Header -->
+<!-- BEGIN: Main Hero Section -->
+<main class="flex-grow flex items-center relative z-10 min-h-screen pt-20" data-purpose="hero-section">
+<!-- Background Effects -->
+<div class="cosmic-grid"></div>
+<div class="perspective-grid"></div>
+<!-- Hero Content -->
+<div class="relative z-10 w-full px-8 md:px-16 lg:px-24">
+<div class="max-w-4xl">
+<!-- Accent Tag -->
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-tokyo-purple/10 border border-tokyo-purple/30 mb-8">
+<span class="w-2 h-2 rounded-full bg-tokyo-purple animate-pulse"></span>
+<span class="text-[10px] uppercase tracking-widest font-bold text-tokyo-purple">Next-Gen Threat Intelligence</span>
+</div>
+<!-- Headline -->
+<h2 class="text-5xl md:text-7xl lg:text-8xl font-black mb-6 leading-[1.1] text-tokyo-gradient">
+        Securing Your<br/>Digital Future
+      </h2>
+<!-- Subheadline -->
+<p class="text-lg md:text-xl text-tokyo-text mb-10 max-w-xl leading-relaxed opacity-90">
+        Advanced protection for enterprises in a rapidly evolving threat landscape. Deploying autonomous defense systems for a secure tomorrow.
+      </p>
+<!-- Call to Action Buttons -->
+<div class="flex flex-col sm:flex-row gap-6" data-purpose="hero-buttons">
+<a class="neon-button-primary text-sm px-10 py-4 rounded-full text-center tracking-[0.1em] inline-flex items-center justify-center uppercase" href="#">
+          GET STARTED
+        </a>
+<a class="neon-button-outline text-sm px-10 py-4 rounded-full text-center tracking-[0.1em] inline-flex items-center justify-center uppercase" href="#">
+          LEARN MORE
+        </a>
+</div>
+</div>
+</div>
+</main>
+<!-- END: Main Hero Section -->
+<!-- BEGIN: Additional Sections (Placeholder for consistent theming) -->
+<section class="relative z-10 bg-tokyo-night py-24 px-8 md:px-16 lg:px-24 border-t border-tokyo-purple/10">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Service Card 1 -->
+<div class="p-8 rounded-2xl bg-tokyo-bg border border-tokyo-muted/20 hover:border-tokyo-purple/50 transition-all group">
+<div class="w-12 h-12 rounded-lg bg-tokyo-purple/10 flex items-center justify-center mb-6 text-tokyo-purple group-hover:bg-tokyo-purple group-hover:text-tokyo-night transition-all">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h3 class="text-xl font-bold text-white mb-3">Threat Defense</h3>
+<p class="text-tokyo-muted text-sm leading-relaxed">Real-time monitoring and proactive mitigation of emerging cyber threats.</p>
+</div>
+<!-- Service Card 2 -->
+<div class="p-8 rounded-2xl bg-tokyo-bg border border-tokyo-muted/20 hover:border-tokyo-cyan/50 transition-all group">
+<div class="w-12 h-12 rounded-lg bg-tokyo-cyan/10 flex items-center justify-center mb-6 text-tokyo-cyan group-hover:bg-tokyo-cyan group-hover:text-tokyo-night transition-all">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h3 class="text-xl font-bold text-white mb-3">Risk Assessment</h3>
+<p class="text-tokyo-muted text-sm leading-relaxed">Comprehensive vulnerability scanning and infrastructure security auditing.</p>
+</div>
+<!-- Service Card 3 -->
+<div class="p-8 rounded-2xl bg-tokyo-bg border border-tokyo-muted/20 hover:border-tokyo-purple/50 transition-all group">
+<div class="w-12 h-12 rounded-lg bg-tokyo-purple/10 flex items-center justify-center mb-6 text-tokyo-purple group-hover:bg-tokyo-purple group-hover:text-tokyo-night transition-all">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</div>
+<h3 class="text-xl font-bold text-white mb-3">Incident Response</h3>
+<p class="text-tokyo-muted text-sm leading-relaxed">Rapid countermeasures and forensic analysis for data breach resolution.</p>
+</div>
+</div>
+</div>
+</section>
+<footer class="relative z-10 bg-tokyo-night py-12 px-8 border-t border-tokyo-muted/10 text-center">
+<div class="flex flex-col items-center gap-4">
+<div class="flex items-center gap-2 opacity-60 grayscale hover:grayscale-0 transition-all cursor-pointer">
+<img alt="Logo" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida/ADBb0uhPXJGd7TBj6T-aKB9IEIkfpsKBr-FsEBDBmZ3y7QqA7-wtRaOE6KgvHAJH1btzM3yQW_581AhLgp7GaU_98IFHU5dNMSNTt7Ifi7k0NBDDksIXKy6CPaprZeiUfKVpde85UtE3K7nmKkGPcQwRyrywTAguwdsz0TfZEBdhvqjTrAem8HSpNvL-H91sVyKROuGc9Yq3WWwlZDEGOVpNG8sGk09iG3vR1zTrdtv1_oQgamNS6v_vUaW8_OJ8"/>
+<span class="text-sm font-bold tracking-[0.2em] font-arch">CONVERGENT</span>
+</div>
+<p class="text-tokyo-muted text-xs tracking-widest uppercase">© 2024 Convergent Cyber Solutions. Protocol Established.</p>
+</div>
+</footer>
+</body></html>

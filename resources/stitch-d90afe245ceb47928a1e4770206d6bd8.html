@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Convergent Cyber Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-dark': '#1e293b',
+            'brand-gray': '#334155',
+            'brand-light': '#f8fafc',
+            'brand-accent': '#94a3b8'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-styles">
+    body {
+      background-color: #1e293b;
+      /* Updated radial gradient background */
+      background-image: radial-gradient(circle at center, #2e3a4e 0%, #1e293b 50%, #111827 100%);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    
+    .glass-button {
+      /* Metallic linear gradient background */
+      background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 40%, #94a3b8 100%);
+      box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      border: 1px solid #f1f5f9;
+      color: #0f172a;
+      font-weight: 700;
+    }
+    
+    .glass-button:hover {
+      background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 40%, #cbd5e1 100%);
+    }
+
+    .glass-button-outline {
+      /* Transparent background, thin silver border */
+      background: transparent;
+      border: 1px solid #cbd5e1;
+      color: #cbd5e1;
+      backdrop-filter: blur(5px);
+    }
+
+    .glass-button-outline:hover {
+      background: rgba(255,255,255,0.05);
+      color: #f8fafc;
+    }
+
+    .text-gradient {
+      /* Silver gradient and subtle text-shadow */
+      background: linear-gradient(to right, #f8fafc, #cbd5e1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .glassmorphism-shield {
+      /* Glassmorphism effect for the shield */
+      background: radial-gradient(circle at top left, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.02) 100%);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body class="text-white min-h-screen flex flex-col font-sans overflow-x-hidden relative">
+<!-- BEGIN: Header -->
+<header class="w-full absolute top-0 left-0 z-50 py-6 px-8 md:px-16 lg:px-24 flex justify-between items-center" data-purpose="main-header">
+<!-- Logo Section -->
+<div class="flex items-center gap-4 cursor-pointer" data-purpose="logo-container">
+<div class="w-12 h-14 relative">
+<!-- Using a placeholder for the shield logo -->
+<svg class="w-full h-full text-gray-300" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="rgba(255,255,255,0.2)"></path>
+</svg>
+</div>
+<div>
+<h1 class="text-xl font-bold tracking-wider leading-tight">CONVERGENT</h1>
+<p class="text-xs text-gray-300 tracking-widest">CYBER SOLUTIONS</p>
+</div>
+</div>
+<!-- Navigation Links -->
+<nav class="hidden md:flex items-center gap-8" data-purpose="desktop-nav">
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors" href="#">Solutions</a>
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors" href="#">Services</a>
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors" href="#">About Us</a>
+<a class="text-sm font-medium text-gray-300 hover:text-white transition-colors" href="#">Resources</a>
+</nav>
+<!-- Contact Button -->
+<div class="hidden md:block" data-purpose="header-cta">
+<a class="glass-button text-gray-900 font-semibold text-sm px-6 py-2.5 rounded-full inline-block transition-all shadow-lg" href="#">
+        Contact
+      </a>
+</div>
+<!-- Mobile Menu Button (Hamburger) -->
+<button class="md:hidden text-gray-300 hover:text-white focus:outline-none" data-purpose="mobile-menu-toggle">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</header>
+<!-- END: Header -->
+<!-- BEGIN: Main Hero Section -->
+<main class="flex-grow flex items-center relative z-10 pt-24 pb-12 px-8 md:px-16 lg:px-24 min-h-screen" data-purpose="hero-section">
+<!-- Central Background Graphic (Geometric Shield) -->
+<div class="absolute inset-0 flex justify-center items-center z-0 pointer-events-none opacity-40 mix-blend-screen" data-purpose="background-graphic">
+<!-- Simplified SVG to represent the large central shield -->
+<div class="w-[80vw] h-[819px] max-w-lg glassmorphism-shield rounded-[4rem] flex justify-center items-center" style="clip-path: polygon(50% 0%, 100% 25%, 100% 60%, 50% 100%, 0% 60%, 0% 25%);">
+</div>
+</div>
+<!-- Hero Content -->
+<div class="relative z-10 max-w-3xl w-full" data-purpose="hero-content">
+<!-- Headline -->
+<h2 class="text-6xl md:text-7xl lg:text-8xl font-black mb-6 leading-tight text-gradient">
+        Securing Your<br/>Digital Future
+      </h2>
+<!-- Subheadline -->
+<p class="text-lg md:text-xl text-gray-300 mb-10 max-w-xl leading-relaxed">
+        Advanced protection for enterprises in a rapidly evolving threat landscape.
+      </p>
+<!-- Call to Action Buttons -->
+<div class="flex flex-col sm:flex-row gap-4" data-purpose="hero-buttons">
+<a class="glass-button text-gray-900 font-bold text-sm px-8 py-3.5 rounded-full text-center tracking-wide transition-all shadow-xl inline-flex items-center justify-center" href="#">
+          GET STARTED
+        </a>
+<a class="glass-button-outline text-white font-semibold text-sm px-8 py-3.5 rounded-full text-center tracking-wide transition-all inline-flex items-center justify-center" href="#">
+          LEARN MORE
+        </a>
+</div>
+</div>
+</main>
+<!-- END: Main Hero Section -->
+</body></html>

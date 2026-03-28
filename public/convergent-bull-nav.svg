@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 60" fill="none">
+  <!-- Abstract bull horns - dusty rose -->
+  <g transform="translate(0, 5) scale(0.7)">
+    <!-- Left horn sweep -->
+    <path d="M38 28 Q20 20 2 28 Q12 18 28 16 Q20 22 38 28Z" fill="#c0c8ce"/>
+    <!-- Right horn sweep -->
+    <path d="M38 28 Q56 10 72 18 Q58 12 44 16 Q54 20 38 28Z" fill="#b07070"/>
+    <!-- Head shape -->
+    <path d="M32 26 Q36 22 40 26 Q38 32 36 38 Q34 32 32 26Z" fill="#c0c8ce" opacity="0.8"/>
+    <!-- Neck/chest curves -->
+    <path d="M28 30 Q24 36 20 40 Q26 38 32 32Z" fill="#b07070" opacity="0.7"/>
+    <path d="M44 30 Q40 36 36 38 Q38 32 44 30Z" fill="#c0c8ce" opacity="0.6"/>
+  </g>
+  <!-- CONVERGENT text -->
+  <text x="58" y="30" font-family="Manrope, sans-serif" font-weight="300" font-size="22" letter-spacing="4" fill="#c0c8ce">CONVERGENT</text>
+  <!-- CYBER subtitle -->
+  <text x="58" y="48" font-family="Manrope, sans-serif" font-weight="300" font-size="10" letter-spacing="2" fill="#c0c8ce">CYBER</text>
+</svg>

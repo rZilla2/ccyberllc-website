@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface": "#dee1f7",
+              "surface-container-low": "#161b2b",
+              "on-primary": "#003642",
+              "tertiary": "#ccbeff",
+              "on-secondary-fixed": "#07006c",
+              "on-error-container": "#ffdad6",
+              "surface-container-highest": "#2f3445",
+              "on-primary-container": "#002e3a",
+              "error-container": "#93000a",
+              "inverse-surface": "#dee1f7",
+              "error": "#ffb4ab",
+              "on-tertiary-fixed": "#1e0e4e",
+              "on-tertiary-fixed-variant": "#4a3d7c",
+              "on-secondary-fixed-variant": "#2f2ebe",
+              "secondary-container": "#3131c0",
+              "primary-fixed": "#b4ebff",
+              "on-primary-fixed": "#001f27",
+              "surface": "#0e1322",
+              "secondary": "#c0c1ff",
+              "surface-container-lowest": "#090e1c",
+              "surface-tint": "#3cd7ff",
+              "on-secondary": "#1000a9",
+              "tertiary-fixed-dim": "#ccbeff",
+              "tertiary-fixed": "#e7deff",
+              "surface-dim": "#0e1322",
+              "on-tertiary": "#332664",
+              "outline": "#908fa0",
+              "on-error": "#690005",
+              "secondary-fixed-dim": "#c0c1ff",
+              "surface-container": "#1a1f2f",
+              "on-surface-variant": "#c7c4d7",
+              "surface-bright": "#343949",
+              "on-background": "#dee1f7",
+              "background": "#0e1322",
+              "inverse-primary": "#00677e",
+              "surface-container-high": "#25293a",
+              "primary-fixed-dim": "#3cd7ff",
+              "inverse-on-surface": "#2b3040",
+              "surface-variant": "#2f3445",
+              "tertiary-container": "#9587cc",
+              "on-secondary-container": "#b0b2ff",
+              "on-tertiary-container": "#2c1f5c",
+              "outline-variant": "#464554",
+              "primary-container": "#009ebe",
+              "primary": "#3cd7ff",
+              "secondary-fixed": "#e1e0ff",
+              "on-primary-fixed-variant": "#004e5f"
+            },
+            fontFamily: {
+              "headline": ["Manrope", "sans-serif"],
+              "body": ["Inter", "sans-serif"],
+              "label": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-mesh {
+            background-image: radial-gradient(at 0% 0%, rgba(60, 215, 255, 0.05) 0px, transparent 50%),
+                              radial-gradient(at 100% 100%, rgba(192, 193, 255, 0.05) 0px, transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/30">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#0e1322]/60 backdrop-blur-xl shadow-[0_24px_48px_rgba(0,0,0,0.5)]">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-black tracking-tighter text-[#dee1f7] font-headline">Sovereign Sentinel</div>
+<div class="hidden md:flex items-center gap-8 font-headline font-bold tracking-tight">
+<a class="text-[#c7c4d7] hover:text-[#dee1f7] transition-colors duration-300" href="#">Services</a>
+<a class="text-[#c7c4d7] hover:text-[#dee1f7] transition-colors duration-300" href="#">Public Sector</a>
+<a class="text-[#c7c4d7] hover:text-[#dee1f7] transition-colors duration-300" href="#">Private Sector</a>
+<a class="text-[#c7c4d7] hover:text-[#dee1f7] transition-colors duration-300" href="#">Contact</a>
+</div>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-md font-headline font-bold scale-95 active:scale-90 transition-transform">
+                Get in Touch
+            </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center px-8 max-w-7xl mx-auto overflow-hidden">
+<div class="relative z-10 w-full lg:w-3/4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container/20 text-on-secondary-container border border-outline-variant/15 text-xs font-semibold tracking-widest uppercase mb-6">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                    Governance, Risk &amp; Compliance
+                </div>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tight text-on-surface mb-8 leading-[1.1]">
+                    Next-Gen <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Cybersecurity Strategy</span> for the Public and Private Sector
+                </h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-2xl mb-12 leading-relaxed font-light">
+                    Sovereign Sentinel Advisory provides elite strategic oversight for organizations navigating complex regulatory landscapes and evolving threat vectors. We don't just secure—we architect resilience.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-8 py-4 rounded-md font-headline font-bold text-lg hover:shadow-[0_0_20px_rgba(60,215,255,0.3)] transition-all">
+                        Request a Consultation
+                    </button>
+<button class="px-8 py-4 rounded-md font-headline font-bold text-lg border border-outline-variant/30 text-on-surface hover:bg-surface-container-highest transition-colors">
+                        Our Methodology
+                    </button>
+</div>
+</div>
+<!-- Asymmetric Abstract Background Element -->
+<div class="absolute right-0 top-1/2 -translate-y-1/2 w-1/2 h-full hidden lg:block opacity-40">
+<div class="w-full h-full bg-mesh rounded-full blur-[100px] absolute -right-1/4"></div>
+<div class="grid grid-cols-8 gap-4 absolute top-0 right-0 opacity-20 transform rotate-12">
+<div class="h-64 w-1 bg-gradient-to-b from-primary to-transparent"></div>
+<div class="h-96 w-1 bg-gradient-to-b from-secondary to-transparent translate-y-12"></div>
+<div class="h-48 w-1 bg-gradient-to-b from-primary to-transparent -translate-y-8"></div>
+<div class="h-80 w-1 bg-gradient-to-b from-secondary to-transparent translate-y-24"></div>
+</div>
+</div>
+</section>
+<!-- Core Services Section (Bento Grid) -->
+<section class="py-24 px-8 max-w-7xl mx-auto">
+<div class="mb-16">
+<h2 class="font-headline text-3xl md:text-5xl font-extrabold tracking-tight mb-4">Strategic Frameworks</h2>
+<div class="h-1 w-24 bg-primary"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Service 1: vCISO -->
+<div class="group bg-surface-container border-b-2 border-transparent hover:border-primary p-10 transition-all duration-500 flex flex-col justify-between min-h-[400px]">
+<div>
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-8 text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">shield_person</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">vCISO Services</h3>
+<p class="text-on-surface-variant leading-relaxed">Executive-level leadership without the overhead. We provide strategic guidance, policy development, and board-level risk reporting tailored to your infrastructure.</p>
+</div>
+<div class="pt-8 flex items-center gap-2 text-primary font-bold group-hover:translate-x-2 transition-transform cursor-pointer">
+                        Explore Leadership <span class="material-symbols-outlined">arrow_right_alt</span>
+</div>
+</div>
+<!-- Service 2: AI-Driven GRC -->
+<div class="group bg-surface-container-high border-b-2 border-transparent hover:border-secondary p-10 transition-all duration-500 flex flex-col justify-between min-h-[400px]">
+<div>
+<div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-8 text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-all">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">neurology</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">AI-Driven GRC Consulting</h3>
+<p class="text-on-surface-variant leading-relaxed">Harnessing advanced analytics to automate compliance mapping and risk assessments. We transform reactive compliance into proactive governance.</p>
+</div>
+<div class="pt-8 flex items-center gap-2 text-secondary font-bold group-hover:translate-x-2 transition-transform cursor-pointer">
+                        View Intelligence <span class="material-symbols-outlined">arrow_right_alt</span>
+</div>
+</div>
+<!-- Service 3: Strategic Security -->
+<div class="group bg-surface-container border-b-2 border-transparent hover:border-primary p-10 transition-all duration-500 flex flex-col justify-between min-h-[400px]">
+<div>
+<div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-8 text-primary group-hover:bg-primary group-hover:text-on-primary transition-all">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">security</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Strategic Security Advisory</h3>
+<p class="text-on-surface-variant leading-relaxed">End-to-end security architecture design and threat modeling for sensitive environments, specializing in sovereign data requirements.</p>
+</div>
+<div class="pt-8 flex items-center gap-2 text-primary font-bold group-hover:translate-x-2 transition-transform cursor-pointer">
+                        Architect Security <span class="material-symbols-outlined">arrow_right_alt</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section (Editorial Style) -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<span class="text-primary font-bold tracking-widest uppercase text-sm block mb-4">Strategic Impact</span>
+<h2 class="font-headline text-4xl font-extrabold mb-8">Trusted by Global Security Leaders</h2>
+<div class="space-y-12">
+<blockquote class="relative">
+<span class="text-6xl font-serif text-primary/20 absolute -left-8 -top-8">"</span>
+<p class="text-xl italic text-on-surface mb-6 relative z-10">
+                                    "Sovereign Sentinel transformed our approach to compliance from a checkbox exercise into a strategic advantage. Their vCISO team is peerless."
+                                </p>
+<footer class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">person</span>
+</div>
+<div>
+<cite class="not-italic font-bold block">Director of IT Security</cite>
+<span class="text-sm text-on-surface-variant">Fortune 500 Energy Sector</span>
+</div>
+</footer>
+</blockquote>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface p-8 rounded-xl flex flex-col items-center justify-center text-center shadow-lg border border-outline-variant/10">
+<div class="text-4xl font-headline font-black text-primary mb-2">98%</div>
+<div class="text-xs font-bold text-on-surface-variant uppercase tracking-tighter">Compliance Rating</div>
+</div>
+<div class="bg-surface p-8 rounded-xl flex flex-col items-center justify-center text-center shadow-lg border border-outline-variant/10 mt-8">
+<div class="text-4xl font-headline font-black text-secondary mb-2">15+</div>
+<div class="text-xs font-bold text-on-surface-variant uppercase tracking-tighter">Years Avg. Exp.</div>
+</div>
+<div class="bg-surface p-8 rounded-xl flex flex-col items-center justify-center text-center shadow-lg border border-outline-variant/10 -mt-8">
+<div class="text-4xl font-headline font-black text-tertiary mb-2">0</div>
+<div class="text-xs font-bold text-on-surface-variant uppercase tracking-tighter">Critical Breaches</div>
+</div>
+<div class="bg-surface p-8 rounded-xl flex flex-col items-center justify-center text-center shadow-lg border border-outline-variant/10">
+<div class="text-4xl font-headline font-black text-primary mb-2">24h</div>
+<div class="text-xs font-bold text-on-surface-variant uppercase tracking-tighter">Response SLA</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Partners Section -->
+<section class="py-20 border-y border-outline-variant/10 overflow-hidden">
+<div class="max-w-7xl mx-auto px-8">
+<p class="text-center text-xs font-bold uppercase tracking-[0.3em] text-on-surface-variant mb-12">Authorized Strategic Partners</p>
+<div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-60">
+<div class="flex items-center gap-2 grayscale hover:grayscale-0 transition-all duration-300">
+<span class="material-symbols-outlined text-3xl">token</span>
+<span class="font-headline font-bold text-xl">CYBERCORE</span>
+</div>
+<div class="flex items-center gap-2 grayscale hover:grayscale-0 transition-all duration-300">
+<span class="material-symbols-outlined text-3xl">hub</span>
+<span class="font-headline font-bold text-xl">GRCFLX</span>
+</div>
+<div class="flex items-center gap-2 grayscale hover:grayscale-0 transition-all duration-300">
+<span class="material-symbols-outlined text-3xl">encrypted</span>
+<span class="font-headline font-bold text-xl">SENTINEL_X</span>
+</div>
+<div class="flex items-center gap-2 grayscale hover:grayscale-0 transition-all duration-300">
+<span class="material-symbols-outlined text-3xl">radar</span>
+<span class="font-headline font-bold text-xl">VANTAGE</span>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 relative overflow-hidden">
+<div class="absolute inset-0 bg-primary/5 -skew-y-3"></div>
+<div class="max-w-4xl mx-auto px-8 relative z-10 text-center">
+<h2 class="font-headline text-4xl md:text-6xl font-extrabold mb-8">Ready to Secure Your Sovereign Future?</h2>
+<p class="text-xl text-on-surface-variant mb-12 leading-relaxed">
+                    Contact our advisory board today for a confidential assessment of your security posture and governance framework.
+                </p>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-md font-headline font-bold text-xl hover:scale-105 transition-transform">
+                        Request a Consultation
+                    </button>
+<a class="inline-flex items-center gap-3 px-10 py-5 font-headline font-bold text-xl hover:text-primary transition-colors" href="mailto:strategy@sovereign-sentinel.com">
+<span class="material-symbols-outlined">mail</span>
+                        Speak with an Expert
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#090e1c] w-full py-12 px-8 border-t border-[#464554]/15">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto gap-6 font-['Inter'] text-sm leading-relaxed text-[#c7c4d7]">
+<div class="text-lg font-bold text-[#dee1f7]">Sovereign Sentinel Advisory</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="hover:text-[#3cd7ff] transition-colors duration-200 opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="hover:text-[#3cd7ff] transition-colors duration-200 opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="hover:text-[#3cd7ff] transition-colors duration-200 opacity-80 hover:opacity-100" href="#">LinkedIn</a>
+<a class="hover:text-[#3cd7ff] transition-colors duration-200 opacity-80 hover:opacity-100" href="#">Global Security Hub</a>
+</div>
+<div class="text-[#c7c4d7]">© 2024 Sovereign Sentinel Advisory. All Rights Reserved.</div>
+</div>
+</footer>
+</body></html>

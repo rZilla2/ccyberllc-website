@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CCyber | Convergent Cyber Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-dim": "#0a1325",
+              "secondary": "#adc7f7",
+              "on-tertiary": "#432c00",
+              "on-error": "#690005",
+              "error": "#ffb4ab",
+              "tertiary-container": "#ffba39",
+              "on-background": "#dae2fc",
+              "on-secondary-container": "#9fb9e8",
+              "tertiary-fixed-dim": "#ffba39",
+              "on-surface-variant": "#bbc9ce",
+              "secondary-fixed-dim": "#adc7f7",
+              "on-primary-container": "#005b6e",
+              "primary-container": "#3cd7ff",
+              "surface": "#0a1325",
+              "surface-container-high": "#212a3d",
+              "secondary-container": "#2f4a72",
+              "on-tertiary-fixed-variant": "#604100",
+              "on-tertiary-container": "#6f4c00",
+              "primary-fixed": "#b3ebff",
+              "background": "#0a1325",
+              "inverse-surface": "#dae2fc",
+              "outline": "#869398",
+              "secondary-fixed": "#d6e3ff",
+              "surface-container-lowest": "#050e20",
+              "primary-fixed-dim": "#3cd7ff",
+              "on-primary-fixed-variant": "#004e5f",
+              "primary": "#b4ebff",
+              "on-error-container": "#ffdad6",
+              "outline-variant": "#3c494d",
+              "surface-container-highest": "#2c3548",
+              "surface-tint": "#3cd7ff",
+              "error-container": "#93000a",
+              "surface-container-low": "#131b2e",
+              "surface-variant": "#2c3548",
+              "on-primary": "#003642",
+              "on-secondary-fixed-variant": "#2d476f",
+              "on-surface": "#dae2fc",
+              "tertiary": "#ffdead",
+              "inverse-on-surface": "#283044",
+              "on-secondary": "#133057",
+              "surface-bright": "#30394d",
+              "on-primary-fixed": "#001f27",
+              "inverse-primary": "#00677d",
+              "tertiary-fixed": "#ffdead",
+              "surface-container": "#171f32",
+              "on-secondary-fixed": "#001b3c",
+              "on-tertiary-fixed": "#281900"
+            },
+            fontFamily: {
+              "headline": ["Manrope", "sans-serif"],
+              "body": ["Manrope", "sans-serif"],
+              "label": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      body {
+        font-family: 'Manrope', sans-serif;
+        background-color: #0a1325;
+      }
+      .node-grid {
+        background-image: radial-gradient(rgba(60, 215, 255, 0.08) 1px, transparent 1px);
+        background-size: 40px 40px;
+      }
+      .glass-nav {
+        backdrop-filter: blur(20px);
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      }
+    </style>
+</head>
+<body class="text-on-background selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#0a1325]/60 backdrop-blur-xl font-['Manrope'] antialiased tracking-tight">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-3">
+<img alt="CCyber Logo" class="h-8 w-auto" data-alt="CCyber professional minimalist geometric logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4cAW-ouhKQIlqGcjI3jJPfAV861su-6cApszZlK4iqWwr6wXsHnTooKq2Ke36UvLEweqS7uxjiZan-GLihUIlPZT4njeIbSNwhl4xbJLBhUqPF6iIpClq4slpKmuV1NOFYBn6RH6rRgk_b-VhYqyaoQZ61OEtvFXU-e2T7kLoiME8WdxjnLSQvjNduJHGtDNNOEybIY2cvL2Bh6Gstsg5fXCEv6e5JSY8UZLn_Lm6YCQ8oJVmnteT5TdGpS8fF9T1wAcrNX1dx-Dx"/>
+<span class="text-xl font-bold tracking-tighter text-[#b4ebff]">CCyber</span>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-[#3cd7ff] border-b-2 border-[#3cd7ff] pb-1" href="#">Solutions</a>
+<a class="text-[#adc7f7] hover:text-[#b4ebff] transition-colors" href="#">Methodology</a>
+<a class="text-[#adc7f7] hover:text-[#b4ebff] transition-colors" href="#">Insights</a>
+<a class="text-[#adc7f7] hover:text-[#b4ebff] transition-colors" href="#">About</a>
+</div>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2 rounded-sm text-sm font-bold uppercase tracking-wider hover:opacity-90 transition-all duration-300 active:scale-[0.99]">
+                Get in Touch
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 node-grid opacity-40 z-0"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background z-0"></div>
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+<div class="lg:col-span-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high border border-outline-variant/20 mb-6">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-[10px] uppercase tracking-[0.2em] font-semibold text-primary">The Convergent Protocol v4.0</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-extrabold text-on-background tracking-tighter leading-[1.1] mb-8">
+                        Next-Gen <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Cybersecurity Strategy</span>
+</h1>
+<p class="text-lg md:text-xl text-secondary max-w-2xl leading-relaxed mb-10 font-light">
+                        Architecting resilience for public and private sectors. We bridge the gap between technical defense and strategic business oversight.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-gradient-to-br from-primary-container to-on-secondary-container text-on-primary px-8 py-4 rounded-sm font-bold uppercase tracking-widest text-xs hover:shadow-xl hover:shadow-primary/10 transition-all">
+                            Request a Consultation
+                        </button>
+<button class="bg-surface-container-highest text-primary px-8 py-4 rounded-sm font-bold uppercase tracking-widest text-xs hover:bg-surface-bright transition-all">
+                            View Methodology
+                        </button>
+</div>
+</div>
+<div class="hidden lg:block lg:col-span-4">
+<div class="relative aspect-square">
+<div class="absolute inset-0 rounded-full border border-primary/10 animate-[spin_20s_linear_infinite]"></div>
+<div class="absolute inset-10 rounded-full border border-secondary/5 animate-[spin_15s_linear_infinite_reverse]"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-64 h-64 bg-surface-container-low rounded-sm rotate-45 border border-outline-variant/30 flex items-center justify-center overflow-hidden">
+<div class="rotate-[-45deg] p-8">
+<span class="material-symbols-outlined text-6xl text-primary-container">shield_with_heart</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Strategic Advisory / Core Services -->
+<section class="py-24 bg-surface-container-low relative">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<h2 class="text-xs uppercase tracking-[0.3em] font-bold text-primary mb-4">Core Services</h2>
+<h3 class="text-4xl font-bold tracking-tight text-on-surface">Precision Managed Defense</h3>
+</div>
+<p class="text-secondary max-w-md text-sm leading-relaxed">
+                        Our services are designed to integrate seamlessly into your existing executive structure, providing elite-level oversight without the overhead.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+<!-- Service 1 -->
+<div class="group bg-surface p-10 border border-outline-variant/10 hover:bg-surface-container-high transition-all duration-500">
+<div class="mb-8">
+<span class="material-symbols-outlined text-primary-container text-4xl" data-weight="fill">admin_panel_settings</span>
+</div>
+<h4 class="text-xl font-bold text-on-surface mb-4">vCISO Services</h4>
+<p class="text-secondary text-sm leading-relaxed mb-8 opacity-70 group-hover:opacity-100 transition-opacity">
+                            On-demand executive leadership for organizations requiring sophisticated security governance without a full-time hire.
+                        </p>
+<div class="w-12 h-[1px] bg-primary-container group-hover:w-full transition-all duration-700"></div>
+</div>
+<!-- Service 2 -->
+<div class="group bg-surface p-10 border border-outline-variant/10 hover:bg-surface-container-high transition-all duration-500">
+<div class="mb-8">
+<span class="material-symbols-outlined text-primary-container text-4xl" data-weight="fill">hub</span>
+</div>
+<h4 class="text-xl font-bold text-on-surface mb-4">AI-Driven GRC Consulting</h4>
+<p class="text-secondary text-sm leading-relaxed mb-8 opacity-70 group-hover:opacity-100 transition-opacity">
+                            Leveraging advanced machine learning to automate risk assessment and maintain continuous compliance across global standards.
+                        </p>
+<div class="w-12 h-[1px] bg-primary-container group-hover:w-full transition-all duration-700"></div>
+</div>
+<!-- Service 3 -->
+<div class="group bg-surface p-10 border border-outline-variant/10 hover:bg-surface-container-high transition-all duration-500">
+<div class="mb-8">
+<span class="material-symbols-outlined text-primary-container text-4xl" data-weight="fill">architecture</span>
+</div>
+<h4 class="text-xl font-bold text-on-surface mb-4">Strategic Advisory</h4>
+<p class="text-secondary text-sm leading-relaxed mb-8 opacity-70 group-hover:opacity-100 transition-opacity">
+                            Board-level consultation focused on long-term digital transformation and securing high-value strategic assets.
+                        </p>
+<div class="w-12 h-[1px] bg-primary-container group-hover:w-full transition-all duration-700"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Building: Testimonials & Partners -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+<!-- Testimonial -->
+<div class="relative">
+<span class="text-8xl font-serif text-primary/10 absolute -top-10 -left-6">"</span>
+<div class="relative z-10">
+<p class="text-2xl font-light text-on-surface leading-snug mb-8 italic">
+                                CCyber transformed our security posture from a reactive 'fire-fighting' mode to a strategic business enabler. Their vCISO integration was seamless and authoritative.
+                            </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest overflow-hidden border border-primary/20">
+<img alt="Client Portrait" data-alt="Professional portrait of a male executive in dark attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6dcDd6-TG4ruSUtg8tutDaEXMlvYmxAvRjaXF-WSvf9VxV5SlE3rWEFjIANpnst7wWS0o6z_TblLJtbQDM9XO5D_v_hqEPo1wvtzrtZVNZMc6rS6cR3H-tJm3uloZ2Mf6LFL7q9eTLp8sh72Q-9aFXd2uUVATtWFlNjZAdLh-CGOh2RlU-uS48qjxYjP6QugPyrw3e4r6usfygqOSnHVnzXgL2AxLfZ8Pq4JVB-hf8xvkK52nBu3g7LMwSnFGpOJh_tApqXk6wtqq"/>
+</div>
+<div>
+<h5 class="text-sm font-bold text-on-surface uppercase tracking-wider">Marcus Thorne</h5>
+<p class="text-xs text-secondary opacity-60">CTO, Global Logistics Group</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Partners -->
+<div class="flex flex-col justify-center">
+<h4 class="text-xs uppercase tracking-[0.3em] font-bold text-primary mb-10 text-center lg:text-left">Strategic Partnerships</h4>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-8 items-center opacity-40 grayscale hover:grayscale-0 transition-all duration-700">
+<!-- Placeholder Logo 1 -->
+<div class="flex items-center justify-center p-4">
+<span class="text-xl font-black text-secondary tracking-tighter italic">AURORA</span>
+</div>
+<!-- Placeholder Logo 2 -->
+<div class="flex items-center justify-center p-4">
+<span class="text-xl font-black text-secondary tracking-tighter">NEXUS.</span>
+</div>
+<!-- Placeholder Logo 3 -->
+<div class="flex items-center justify-center p-4">
+<span class="text-xl font-black text-secondary tracking-widest">QUANTUM</span>
+</div>
+<!-- Placeholder Logo 4 -->
+<div class="flex items-center justify-center p-4">
+<span class="text-xl font-black text-secondary tracking-tight">SYNAPSE</span>
+</div>
+<!-- Placeholder Logo 5 -->
+<div class="flex items-center justify-center p-4">
+<span class="text-xl font-black text-secondary tracking-tighter">VERITAS</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-32 bg-surface relative overflow-hidden">
+<div class="absolute inset-0 bg-primary-container/5 opacity-20"></div>
+<div class="max-w-5xl mx-auto px-8 relative z-10 text-center">
+<h2 class="text-4xl md:text-5xl font-extrabold text-on-surface tracking-tighter mb-8">
+                    Ready to Converge Intelligence with Defense?
+                </h2>
+<p class="text-lg text-secondary mb-12 max-w-2xl mx-auto font-light leading-relaxed">
+                    Contact us today for a high-level strategic assessment of your current security posture. No compromises, just elite-tier advisory.
+                </p>
+<div class="flex justify-center">
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-12 py-5 rounded-sm font-bold uppercase tracking-[0.2em] text-sm hover:scale-105 active:scale-95 transition-all shadow-2xl shadow-primary/20">
+                        Request a Consultation
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0a1325] w-full border-t border-[#2c3548]/20">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-12 py-16 max-w-7xl mx-auto">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<span class="text-lg font-semibold text-[#b4ebff]">CCyber</span>
+</div>
+<p class="text-[#adc7f7]/70 font-['Manrope'] text-sm tracking-wide leading-relaxed max-w-xs">
+                    Elite cybersecurity advisory and strategic oversight for the world's most critical infrastructures.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col space-y-4">
+<a class="text-[#adc7f7]/70 hover:text-[#3cd7ff] transition-colors font-['Manrope'] text-sm tracking-wide" href="#">Privacy Policy</a>
+<a class="text-[#adc7f7]/70 hover:text-[#3cd7ff] transition-colors font-['Manrope'] text-sm tracking-wide" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col space-y-4">
+<a class="text-[#adc7f7]/70 hover:text-[#3cd7ff] transition-colors font-['Manrope'] text-sm tracking-wide" href="#">LinkedIn</a>
+<a class="text-[#adc7f7]/70 hover:text-[#3cd7ff] transition-colors font-['Manrope'] text-sm tracking-wide" href="#">Global Security Center</a>
+</div>
+</div>
+<div class="md:col-span-2 pt-8 border-t border-[#2c3548]/10">
+<p class="text-[#adc7f7]/50 font-['Manrope'] text-xs tracking-widest text-center md:text-left">
+                    © 2024 Convergent Cyber Solutions, LLC. All rights reserved.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>

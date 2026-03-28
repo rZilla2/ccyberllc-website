@@ -72,9 +72,9 @@ export default function Home() {
           alt=""
           className="absolute opacity-[0.12]"
           style={{
-            width: "75vw",
+            width: "87.5vw",
             top: "calc(50% - 85px)",
-            right: "45%",
+            right: "40%",
             transform: "translateY(-50%)",
           }}
         />
@@ -104,7 +104,7 @@ export default function Home() {
 
           {slides[currentSlide].buttons && (
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-              <Button size="lg" variant="outline" className="h-14 px-8 text-lg border-muted-foreground/40 text-foreground bg-muted/50 hover:bg-muted hover:border-muted-foreground/60 transition-all duration-300" asChild>
+              <Button size="lg" className="h-14 px-8 text-lg bg-primary text-primary-foreground shadow-[0_0_20px_rgba(176,112,112,0.3)] hover:shadow-[0_0_35px_rgba(176,112,112,0.6)] transition-all duration-300" asChild>
                 <Link href="/contact">
                   Book a Meeting <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>

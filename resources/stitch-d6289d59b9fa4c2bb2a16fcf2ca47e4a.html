@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Convergent Cyber Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style data-purpose="custom-styles">body {
+    background: linear-gradient(135deg, #1E252D 0%, #28333D 100%);
+    color: #e2e8f0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif
+    }
+.gradient-text {
+    color: #f8fafc;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+.btn-gradient {
+    background: linear-gradient(90deg, #8ea3b8 0%, #c9d6e4 100%);
+    color: #000000;
+    }
+.btn-outline {
+    border: 1px solid #cbd5e1;
+    color: #cbd5e1;
+    background-color: transparent;
+    transition: all 0.3s ease
+    }
+.btn-outline:hover {
+    background-color: rgba(203, 213, 225, 0.1)
+    }</style>
+</head>
+<body class="min-h-screen flex flex-col relative overflow-hidden">
+<!-- BEGIN: MainHeader -->
+<header class="w-full py-6 px-8 flex items-center justify-between z-10 relative">
+<!-- Logo Section -->
+<div class="flex items-center gap-4 cursor-pointer" data-purpose="logo-container">
+<div class="w-12 h-12 bg-slate-300 rounded-md clip-polygon flex items-center justify-center shadow-lg relative" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); background: linear-gradient(135deg, #cbd5e1 0%, #64748b 100%);">
+<!-- Abstract Shield Shape -->
+<div class="w-8 h-8 bg-slate-700 rounded-sm" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);"></div>
+</div>
+<div><h1 class="text-xl font-bold tracking-widest text-white uppercase">Convergent</h1>
+<p class="text-[10px] tracking-widest text-slate-400 uppercase mt-0.5">Cyber Solutions</p></div>
+</div>
+<!-- Navigation Menu -->
+<nav class="hidden md:flex items-center gap-8" data-purpose="main-navigation">
+<a class="text-slate-300 hover:text-white transition-colors text-sm font-medium" href="#">Solutions</a>
+<a class="text-slate-300 hover:text-white transition-colors text-sm font-medium" href="#">Services</a>
+<a class="text-slate-300 hover:text-white transition-colors text-sm font-medium" href="#">About Us</a>
+<a class="text-slate-300 hover:text-white transition-colors text-sm font-medium" href="#">Resources</a>
+</nav>
+<!-- Contact Button -->
+<div data-purpose="header-cta">
+<button class="btn-gradient px-6 py-2 rounded-full font-semibold text-sm hover:opacity-90 transition-opacity shadow-md">
+        Contact
+      </button>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<main class="flex-grow flex items-center relative z-10 px-8 lg:px-24">
+<div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<!-- Text Content -->
+<div class="max-w-2xl z-20" data-purpose="hero-text-content">
+<h2 class="text-5xl lg:text-7xl font-extrabold leading-tight mb-6 gradient-text drop-shadow-lg">
+          Securing Your<br/>Digital Future
+        </h2>
+<p class="text-lg lg:text-xl text-slate-300 mb-10 max-w-lg leading-relaxed">
+          Advanced protection for enterprises in a rapidly evolving threat landscape.
+        </p>
+<!-- CTA Buttons -->
+<div class="flex flex-wrap items-center gap-4" data-purpose="hero-buttons">
+<button class="btn-gradient px-8 py-3 rounded-full font-bold text-sm tracking-wide hover:shadow-lg hover:shadow-slate-400/20 transition-all uppercase">
+            Get Started
+          </button>
+<button class="btn-outline px-8 py-3 rounded-full font-bold text-sm tracking-wide uppercase">
+            Learn More
+          </button>
+</div>
+</div>
+<!-- Graphic/Image Content -->
+<div class="hidden lg:flex justify-center items-center relative z-0" data-purpose="hero-graphic"><div class="w-[500px] h-[500px] absolute" style="clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0% 80%, 0% 20%); background: rgba(30, 41, 59, 0.4); border: 2px solid rgba(255,255,255,0.15); backdrop-filter: blur(16px); box-shadow: inset 0 0 50px rgba(255,255,255,0.05);">
+</div>
+<div class="w-[496px] h-[496px] absolute" style="clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0% 80%, 0% 20%); background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,0.2) 100%);">
+</div></div>
+</div>
+</main>
+<!-- END: HeroSection -->
+</body></html>

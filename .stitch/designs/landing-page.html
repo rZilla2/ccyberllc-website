@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Convergent Cyber Solutions | Architectural Oversight</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container": "#171f32",
+              "surface-container-lowest": "#050e20",
+              "inverse-surface": "#dae2fc",
+              "on-tertiary": "#003542",
+              "tertiary-fixed": "#b4ebff",
+              "surface-dim": "#0a1325",
+              "secondary": "#adc7f7",
+              "primary-fixed": "#b3ebff",
+              "surface-container-low": "#131b2e",
+              "surface-variant": "#2c3548",
+              "on-surface": "#dae2fc",
+              "surface-bright": "#31394d",
+              "on-secondary-container": "#9cb6e5",
+              "on-secondary-fixed": "#001b3d",
+              "outline": "#869398",
+              "inverse-on-surface": "#283044",
+              "error": "#ffb4ab",
+              "on-tertiary-fixed": "#001f27",
+              "primary": "#b4ebff",
+              "on-secondary": "#133058",
+              "on-tertiary-fixed-variant": "#0c4d5e",
+              "tertiary-container": "#98cfe2",
+              "surface": "#0a1325",
+              "inverse-primary": "#00677d",
+              "error-container": "#93000a",
+              "surface-container-high": "#212a3d",
+              "on-error-container": "#ffdad6",
+              "on-primary-fixed": "#001f27",
+              "primary-container": "#3cd7ff",
+              "on-primary": "#003642",
+              "on-surface-variant": "#bbc9ce",
+              "on-secondary-fixed-variant": "#2d4770",
+              "outline-variant": "#3c494d",
+              "on-tertiary-container": "#1f596a",
+              "background": "#0a1325",
+              "tertiary": "#b4ebff",
+              "primary-fixed-dim": "#3cd7ff",
+              "tertiary-fixed-dim": "#98cfe2",
+              "secondary-fixed": "#d6e3ff",
+              "on-primary-container": "#005b6e",
+              "on-background": "#dae2fc",
+              "secondary-container": "#2d4770",
+              "secondary-fixed-dim": "#adc7f7",
+              "surface-tint": "#3cd7ff",
+              "surface-container-highest": "#2c3548",
+              "on-primary-fixed-variant": "#004e5f",
+              "on-error": "#690005"
+            },
+            fontFamily: {
+              "headline": ["Manrope", "sans-serif"],
+              "body": ["Manrope", "sans-serif"],
+              "label": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #0a1325;
+            background-image: radial-gradient(#adc7f710 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .glass-nav {
+            background: rgba(10, 19, 37, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .hero-gradient-text {
+            background: linear-gradient(135deg, #b4ebff 0%, #3cd7ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .cta-gradient {
+            background: linear-gradient(135deg, #3cd7ff 0%, #9fb9e8 100%);
+        }
+    </style>
+</head>
+<body class="font-body text-on-surface antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl rounded-lg border border-slate-400/15 glass-nav shadow-[0px_24px_48px_rgba(0,0,0,0.4)] z-50 flex justify-between items-center px-8 py-4">
+<div class="text-lg font-bold tracking-tighter text-slate-100 font-headline uppercase">
+            Convergent Cyber Solutions
+        </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-400 font-medium hover:text-slate-100 transition-colors font-label text-xs tracking-widest uppercase" href="#">Services</a>
+<a class="text-slate-400 font-medium hover:text-slate-100 transition-colors font-label text-xs tracking-widest uppercase" href="#">About</a>
+<a class="text-slate-400 font-medium hover:text-slate-100 transition-colors font-label text-xs tracking-widest uppercase" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-[#3cd7ff] hover:text-white transition-colors" data-icon="shield">shield</button>
+<button class="bg-primary-container text-on-primary font-bold px-6 py-2 rounded-[4px] hover:brightness-110 active:scale-95 transition-all duration-200 text-sm">
+                Book a Meeting
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden px-6">
+<div class="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="z-10 text-left">
+<label class="text-primary-fixed-dim font-label text-[0.75rem] tracking-[0.05em] uppercase mb-4 block">Executive Protection</label>
+<h1 class="text-[3.5rem] font-extrabold leading-[1.1] tracking-[-0.02em] text-primary mb-6 font-headline">
+                    Securing Your <br/>Digital Future
+                </h1>
+<p class="text-lg text-on-surface-variant max-w-lg mb-10 leading-[1.6]">
+                    Strategic advisory, executive security leadership, and AI-driven compliance for forward-thinking organizations seeking impenetrable digital resilience.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="cta-gradient text-on-primary font-bold px-8 py-4 rounded-[4px] hover:brightness-110 active:scale-95 transition-all shadow-lg shadow-primary-container/20">
+                        Schedule Consultation
+                    </button>
+<button class="border border-outline-variant/30 text-secondary font-bold px-8 py-4 rounded-[4px] hover:bg-surface-bright transition-all active:scale-95">
+                        Our Services
+                    </button>
+</div>
+</div>
+<div class="relative flex justify-center items-center">
+<!-- Abstract 3D Shield Representation -->
+<div class="relative w-full aspect-square max-w-md">
+<img alt="Cybersecurity Shield" class="w-full h-full object-contain mix-blend-lighten opacity-80" data-alt="A large faceted geometric 3D shield centerpiece made of brushed gray metallic material with subtle cyan glowing reflections in a dark void" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKgCfSlFB917u5liali9ZagT8sngYXD12WWfKy_yXFmY7c23izPT2U2xnQiGn6AU5Ol-ZEo7Gv1UJv52HOCDL-YdOscKyVMFGHhrnK7HnBlQXfatiGRe_GHBxiRcg-cTrqRysC126abiPVasdwQ3ku5NFb1fK_C2horek32w48fjP9C4NEJzKGdhP0pUI-AsQsFmRhvsqZAh1OZlNoQ6op_EncX_5YzTnfVwz8iGubteigYPlCxypA-PFt8LIywGdlVY7b4Vx-d1u6"/>
+<!-- Subtle Glows -->
+<div class="absolute inset-0 bg-primary-container/10 blur-[100px] rounded-full -z-10"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="bg-surface-container-low py-32 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<label class="text-secondary font-label text-[0.75rem] tracking-[0.05em] uppercase mb-2 block">Our Expertise</label>
+<h2 class="text-[2rem] font-bold text-on-surface font-headline leading-tight">
+                        Architectural Cybersecurity For The Modern Enterprise
+                    </h2>
+</div>
+<div class="h-[2px] bg-primary-container w-24 mb-4 hidden md:block"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-surface-container-high p-10 flex flex-col items-start gap-6 hover:translate-y-[-8px] transition-transform duration-300 group">
+<span class="material-symbols-outlined text-primary-fixed-dim text-4xl" data-icon="insights">insights</span>
+<h3 class="text-xl font-bold text-slate-100 font-headline">Strategic Advisory</h3>
+<p class="text-on-surface-variant leading-[1.6]">
+                        Peer-level guidance tailored for cybersecurity firms and boards to navigate the complex threat landscape with confidence.
+                    </p>
+<a class="text-primary-fixed-dim font-bold flex items-center gap-2 group-hover:gap-4 transition-all uppercase tracking-widest text-[0.75rem]" href="#">
+                        Learn More <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-high p-10 flex flex-col items-start gap-6 hover:translate-y-[-8px] transition-transform duration-300 group">
+<span class="material-symbols-outlined text-primary-fixed-dim text-4xl" data-icon="admin_panel_settings">admin_panel_settings</span>
+<h3 class="text-xl font-bold text-slate-100 font-headline">Virtual CISO</h3>
+<p class="text-on-surface-variant leading-[1.6]">
+                        On-demand executive security leadership providing elite governance without the overhead of a full-time hire.
+                    </p>
+<a class="text-primary-fixed-dim font-bold flex items-center gap-2 group-hover:gap-4 transition-all uppercase tracking-widest text-[0.75rem]" href="#">
+                        Learn More <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-high p-10 flex flex-col items-start gap-6 hover:translate-y-[-8px] transition-transform duration-300 group">
+<span class="material-symbols-outlined text-primary-fixed-dim text-4xl" data-icon="security_update_good">security_update_good</span>
+<h3 class="text-xl font-bold text-slate-100 font-headline">AI-Driven GRC</h3>
+<p class="text-on-surface-variant leading-[1.6]">
+                        Governance, risk, and compliance specialized for CMMC, NIST 800-171, and FedRAMP through automated intelligence.
+                    </p>
+<a class="text-primary-fixed-dim font-bold flex items-center gap-2 group-hover:gap-4 transition-all uppercase tracking-widest text-[0.75rem]" href="#">
+                        Learn More <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Content Divider / Visual Break -->
+<div class="w-full h-64 bg-surface flex items-center justify-center relative overflow-hidden">
+<div class="absolute inset-0 flex items-center justify-center opacity-10">
+<span class="text-[12rem] font-extrabold tracking-tighter text-outline select-none">OVERSIGHT</span>
+</div>
+<div class="max-w-7xl w-full px-8 flex justify-between items-center z-10">
+<div class="flex items-center gap-4">
+<div class="w-3 h-3 rounded-full bg-primary-container animate-pulse shadow-[0_0_10px_#3cd7ff]"></div>
+<p class="text-secondary font-label tracking-widest uppercase text-xs">Continuous Surveillance Active</p>
+</div>
+<div class="h-[1px] flex-grow mx-12 bg-surface-variant/30"></div>
+<p class="text-on-surface-variant font-label tracking-widest uppercase text-xs">Status: Secure</p>
+</div>
+</div>
+<!-- Contact CTA / Minimal Section -->
+<section class="py-32 px-6">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="text-[2.5rem] font-bold text-on-surface font-headline mb-8 leading-tight">
+                Ready to fortify your organizational architecture?
+            </h2>
+<button class="cta-gradient text-on-primary font-bold px-12 py-5 rounded-[4px] hover:scale-105 transition-all text-lg shadow-2xl shadow-primary-container/30">
+                Initiate Strategic Briefing
+            </button>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#0a1325] w-full py-12 px-8 border-t border-slate-800/50">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto gap-6">
+<div class="text-slate-200 font-semibold font-headline tracking-tight">
+                Convergent Cyber Solutions
+            </div>
+<div class="flex flex-col md:flex-row items-center gap-8">
+<a class="font-manrope text-xs tracking-widest uppercase text-slate-400 hover:text-slate-100 transition-colors opacity-80 hover:opacity-100" href="mailto:strategy@convergentcybersolutions.com">
+                    strategy@convergentcybersolutions.com
+                </a>
+<span class="font-manrope text-xs tracking-widest uppercase text-slate-500">
+                    © 2024 Convergent Cyber Solutions
+                </span>
+</div>
+</div>
+</footer>
+</body></html>

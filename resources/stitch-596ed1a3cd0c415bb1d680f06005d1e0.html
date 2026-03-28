@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Convergent Cyber Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              dark: '#1a232c',
+              light: '#f0f4f8',
+              accent: '#8ba6ba'
+            }
+          },
+          backgroundImage: {
+            'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+            'button-gradient': 'linear-gradient(to right, #e2e8f0, #94a3b8, #e2e8f0)',
+            'text-gradient': 'linear-gradient(to right, #f8fafc, #94a3b8)',
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-styles">body {
+    background-color: #1a232c;
+    color: #f8fafc;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBzq6N97NT-nLPMcJFWZNf5D2iej7PgxU9ykg2Wmilxenp9UuHElpPdmBU9qC-yc-d8-SD6vJmdLvXjaT1YS-nrNZTcZ3KFnF9UaZdoTXwYR7DueRUW73qFjov9bmCpE3iD7NDCe77teZXGpKGZDqW5vHs8lMsNka1bvchVTVg7XYJcq5lGOvrMQKC4Z8VMkyxThs-A-LLJ5SF7g9LL1OPnEeyw1-I_fftjoboruln8q9LHco5lGNlxizzOzIE9R8Q5I2HruzgKF9ES);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column
+    }
+.glass-effect {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1)
+    }
+.text-gradient-effect {
+    background-image: linear-gradient(to bottom, #fff, #a0aec0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent
+    }
+.btn-gradient {
+    background: linear-gradient(135deg, #e2e8f0 0%, #94a3b8 50%, #e2e8f0 100%);
+    color: #1a232c;
+    font-weight: 600;
+    transition: all 0.3s ease
+    }
+.btn-gradient:hover {
+    background: linear-gradient(135deg, #f1f5f9 0%, #cbd5e1 50%, #f1f5f9 100%);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2)
+    }
+.btn-outline {
+    border: 1px solid #94a3b8;
+    color: #f8fafc;
+    transition: all 0.3s ease
+    }
+.btn-outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #cbd5e1
+    }
+.hero-shield-img {
+    opacity: 0.85
+    }</style>
+</head>
+<body class="antialiased overflow-x-hidden relative">
+<!-- BEGIN: MainHeader -->
+<header class="w-full relative z-20 py-6 px-8 lg:px-16 flex items-center justify-between">
+<!-- Logo Container -->
+<div class="flex items-center gap-4 cursor-pointer">
+<img alt="Convergent Cyber Solutions Logo" class="w-12 h-12 md:w-14 md:h-14 drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDU2FBFeMA3KI6t5O8TL2dFw6_lu_ICn07r3sShZkQ1Ge5Ct_fmSRTKHOOKcPFxoH9VNPsMDl2TDkxPO94dl_8t7agczLR38Y4-OaDUKjzvW9FxqO1n3EEx6_TjHDwUHZosfZIgXlO9ucLg1KvMsxFZwyqQGq8B_go3hSWhDRhhz-Rfz36uev0hYAg2N575JBmNrowhGbSNtvHRHYyaOeh-CDKzfI1OF__9zhU0tnXNLXpEa-6cWXWXxtkY0A657NnB2lOpDH58Mih"/>
+<div class="flex flex-col">
+<span class="text-xl md:text-2xl font-bold tracking-widest text-white leading-tight">CONVERGENT</span>
+<span class="text-xs md:text-sm tracking-[0.2em] text-gray-400">CYBER SOLUTIONS</span>
+</div>
+</div>
+<!-- Desktop Navigation -->
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-gray-300 hover:text-white transition-colors duration-200 font-medium" href="#">Solutions</a>
+<a class="text-gray-300 hover:text-white transition-colors duration-200 font-medium" href="#">Services</a>
+<a class="text-gray-300 hover:text-white transition-colors duration-200 font-medium" href="#">About Us</a>
+<a class="text-gray-300 hover:text-white transition-colors duration-200 font-medium" href="#">Resources</a>
+</nav>
+<!-- Contact Button -->
+<div class="hidden lg:block">
+<a class="btn-gradient px-8 py-2.5 rounded-full text-sm uppercase tracking-wide inline-block" href="#">Contact</a>
+</div>
+<!-- Mobile Menu Button (Placeholder) -->
+<div class="lg:hidden text-white cursor-pointer">
+<svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: Hero Section -->
+<main class="flex-grow flex items-center relative z-10 w-full max-w-7xl mx-auto px-8 lg:px-16 py-12 lg:py-0">
+<div class="w-full flex flex-col lg:flex-row items-center justify-between relative">
+<!-- Text Content Area -->
+<div class="w-full lg:w-1/2 z-20 flex flex-col items-start text-left mt-10 lg:mt-0 lg:pr-10">
+<h1 class="text-5xl lg:text-7xl font-bold leading-tight mb-6 text-gradient-effect drop-shadow-md">
+          Securing Your<br/>Digital Future
+        </h1>
+<p class="text-lg lg:text-xl text-gray-300 mb-10 max-w-md leading-relaxed font-light">
+          Advanced protection for enterprises in a rapidly evolving threat landscape.
+        </p>
+<!-- Action Buttons -->
+<div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+<a class="btn-gradient px-10 py-3.5 rounded-full text-sm font-bold uppercase tracking-wider text-center" href="#">
+            Get Started
+          </a>
+<a class="btn-outline px-10 py-3.5 rounded-full text-sm font-semibold uppercase tracking-wider text-center" href="#">
+            Learn More
+          </a>
+</div>
+</div>
+<!-- Large Center Shield Graphic -->
+<div class="w-full lg:w-1/2 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:relative lg:top-auto lg:left-auto lg:transform-none z-0 opacity-20 lg:opacity-100 flex justify-center pointer-events-none mt-20 lg:mt-0">
+<!-- Using a placeholder for the complex 3D shield -->
+<img alt="Large Shield Graphic" class="w-[120%] max-w-[800px] h-auto object-contain hero-shield-img drop-shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPQ_aQqb1aIMITDB8SjPdMGRHNT9jeGB0JUcP21gAvyWuRAqiN2MDJiKbrWpCX0aIWGhs9BWxdHT4veHGiAIdxWG-9XqVVifmyugcdt0aJAnOnKliwwksmBpQNeqrDPi3HGAFTSEQniFt_Tbj-dXJGzR-2_HIxGUu0vN_wLf9DnwOX_jqTAgPkRfBT1TAmW0tsJDU7x3n_9H8M0xOPaGg4nwHD-zX12oTXKyvnXbEPfnrn8A1X4yYr3FqPXBsCjkJr2sOvDNqvr-M_"/>
+</div>
+</div>
+</main>
+<!-- END: Hero Section -->
+</body></html>

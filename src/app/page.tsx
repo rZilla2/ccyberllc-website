@@ -74,7 +74,7 @@ export default function Home() {
           style={{
             width: "87.5vw",
             top: "calc(50% - 85px)",
-            right: "40%",
+            right: "48%",
             transform: "translateY(-50%)",
           }}
         />

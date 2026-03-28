@@ -72,9 +72,9 @@ export default function Home() {
           alt=""
           className="absolute opacity-[0.12]"
           style={{
-            width: "87.5vw",
+            width: "75vw",
             top: "calc(50% - 85px)",
-            right: "40%",
+            right: "45%",
             transform: "translateY(-50%)",
           }}
         />

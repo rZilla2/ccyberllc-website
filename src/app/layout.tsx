@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={cn("dark", inter.variable, outfit.variable)}>
-      <body className="font-sans antialiased min-h-screen flex flex-col bg-black text-foreground overflow-x-hidden">
+      <body className="font-sans antialiased min-h-screen flex flex-col bg-black text-foreground overflow-x-hidden max-w-[100vw]">
         <Navbar />
         <main className="flex-grow">
           {children}

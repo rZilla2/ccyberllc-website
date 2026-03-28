@@ -49,5 +49,7 @@
   }
   html {
     color-scheme: dark;
+    overflow-x: hidden;
+    background-color: #000000;
   }
 }

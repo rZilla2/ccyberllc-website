@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Outfit } from "next/font/google";
 import { cn } from "@/lib/utils";
 import "./globals.css";
@@ -19,6 +19,9 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "Convergent Cyber Solutions | Trusted Strategic & Cybersecurity Advisors",
   description: "Elite strategic advisory for growth-focused cybersecurity firms in the federal and commercial sectors.",
+};
+
+export const viewport: Viewport = {
   themeColor: "#000000",
 };
 
@@ -31,7 +34,7 @@ export default function RootLayout({
     <html lang="en" className={cn("dark", inter.variable, outfit.variable)}>
       <body className="font-sans antialiased min-h-screen flex flex-col bg-black text-foreground overflow-x-hidden max-w-[100vw]">
         <Navbar />
-        <main className="flex-grow">
+        <main id="main-content" className="flex-grow">
           {children}
         </main>
         <Footer />

@@ -15,29 +15,29 @@ export function Footer() {
         </div>
         
         <div>
-          <h3 className="font-semibold mb-4">Advisory Services</h3>
+          <h2 className="text-sm font-semibold uppercase tracking-wider mb-4">Advisory Services</h2>
           <ul className="grid gap-2 text-sm text-muted-foreground">
-            <li><Link href="/services" className="hover:text-primary transition-colors">vCISO Engagements</Link></li>
-            <li><Link href="/services" className="hover:text-primary transition-colors">Federal Compliance (CMMC)</Link></li>
-            <li><Link href="/services" className="hover:text-primary transition-colors">Growth Strategy</Link></li>
-            <li><Link href="/services" className="hover:text-primary transition-colors">Risk Assessment</Link></li>
+            <li><Link href="/services" className="hover:text-primary focus-visible:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:rounded-sm transition-colors">vCISO Engagements</Link></li>
+            <li><Link href="/services" className="hover:text-primary focus-visible:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:rounded-sm transition-colors">Federal Compliance (CMMC)</Link></li>
+            <li><Link href="/services" className="hover:text-primary focus-visible:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:rounded-sm transition-colors">Growth Strategy</Link></li>
+            <li><Link href="/services" className="hover:text-primary focus-visible:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:rounded-sm transition-colors">Risk Assessment</Link></li>
           </ul>
         </div>
 
         <div>
-          <h3 className="font-semibold mb-4">Company</h3>
+          <h2 className="text-sm font-semibold uppercase tracking-wider mb-4">Company</h2>
           <ul className="grid gap-2 text-sm text-muted-foreground">
-            <li><Link href="/" className="hover:text-primary transition-colors">About Us</Link></li>
-            <li><Link href="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
-            <li><Link href="/contact" className="hover:text-primary transition-colors">Careers</Link></li>
+            <li><Link href="/" className="hover:text-primary focus-visible:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:rounded-sm transition-colors">About Us</Link></li>
+            <li><Link href="/contact" className="hover:text-primary focus-visible:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:rounded-sm transition-colors">Contact</Link></li>
+            <li><Link href="/contact" className="hover:text-primary focus-visible:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:rounded-sm transition-colors">Careers</Link></li>
           </ul>
         </div>
         
         <div>
-          <h3 className="font-semibold mb-4">Legal</h3>
+          <h2 className="text-sm font-semibold uppercase tracking-wider mb-4">Legal</h2>
           <ul className="grid gap-2 text-sm text-muted-foreground">
-            <li><Link href="#" className="hover:text-primary transition-colors">Privacy Policy</Link></li>
-            <li><Link href="#" className="hover:text-primary transition-colors">Terms of Service</Link></li>
+            <li><Link href="#" className="hover:text-primary focus-visible:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:rounded-sm transition-colors">Privacy Policy</Link></li>
+            <li><Link href="#" className="hover:text-primary focus-visible:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:rounded-sm transition-colors">Terms of Service</Link></li>
           </ul>
         </div>
       </div>

@@ -73,7 +73,7 @@ export default function Home() {
           className="absolute opacity-[0.12]"
           style={{
             width: "87.5vw",
-            top: "calc(50% - 75px)",
+            top: "calc(50% - 85px)",
             right: "40%",
             transform: "translateY(-50%)",
           }}

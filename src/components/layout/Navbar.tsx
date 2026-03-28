@@ -12,7 +12,7 @@ export function Navbar() {
           <Image src="/convergent-bull-logo.png" alt="Convergent Cyber" width={600} height={430} className="object-contain w-[200px] md:w-[240px]" priority />
         </Link>
         <div className="flex items-center gap-4">
-          <Button asChild className="bg-secondary text-secondary-foreground hover:bg-secondary/80">
+          <Button asChild className="bg-[#c0c8ce] text-black hover:bg-[#a8b0b8]">
             <Link href="/contact">Book a Meeting</Link>
           </Button>
         </div>
